@@ -1,0 +1,393 @@
+body,html{font-family:Avenir;font-size:16px;margin:0;padding:0}a{text-decoration:none;color:#000000}p{margin:0 0 1rem 0}input,select,textarea{font-size:1rem;font-family:Avenir;margin:0;border:0;outline:0;background:#f5f5f5}@font-face{font-family:Avenir;font-display:swap;src:url(../fonts/Avenir-Book.woff) format("woff"),url(../fonts/Avenir-Book.woff2) format("woff2");font-weight:400;font-style:normal}@font-face{font-family:Avenir;font-display:swap;src:url(../fonts/Avenir-Heavy.woff) format("woff"),url(../fonts/Avenir-Heavy.woff2) format("woff2");font-weight:800;font-style:normal}@font-face{font-family:Avenir;font-display:swap;src:url(../fonts/Avenir-Medium.woff) format("woff"),url(../fonts/Avenir-Medium.woff2) format("woff2");font-weight:500;font-style:normal}@font-face{font-family:Avenir;font-display:swap;src:url(../fonts/Avenir-Roman.woff) format("woff"),url(../fonts/Avenir-Roman.woff2) format("woff2");font-weight:400;font-style:Roman}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}::-webkit-input-placeholder{color:#000}::-moz-placeholder{color:#000}:-ms-input-placeholder{color:#000}:-moz-placeholder{color:#000}.filters__select-calendar{padding-left:2.2rem;padding-right:1.1rem;background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/calendar.svg),url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg);background-position:left center,right center;background-repeat:no-repeat,no-repeat;-webkit-appearance:none;-moz-appearance:none;appearance:none;line-height:1.3}.filters__select-location{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg) no-repeat right center;padding-right:1rem;padding-bottom:.1rem;font-size:.8125rem}.map__img{max-width:100%}.map{position:fixed;z-index:-5}.side-drawer{top:0;left:0;width:400px;height:100%;background:#fff;min-height:100vh}.header{position:absolute;width:400px;height:378px;left:0;top:0;background:#f4f5f6}.header__logo{position:absolute;width:125.12px;height:79px;left:137px;top:21px;background:url(https://ki-ri-to-kun.github.io/happy-booking/img/logo.png)}.header__title{position:absolute;margin-top:0;margin-bottom:0;width:343px;height:22px;left:29px;top:114px;font-family:Avenir;font-size:16px;line-height:22px;text-align:center;color:#141414}.filters{position:absolute;width:388px;height:174px;left:0;top:156px}.filters__search{margin-left:32px;margin-bottom:36px;margin-top:5px;width:70%;background:url(https://ki-ri-to-kun.github.io/happy-booking/img/search.svg) no-repeat;padding-left:35px}.filters__select-service{padding-left:2.2rem;padding-right:1rem;background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/service.svg),url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg);background-position:left center,right center;background-repeat:no-repeat,no-repeat;-webkit-appearance:none;-moz-appearance:none;appearance:none;line-height:1.5}.filters__service-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-left:23px;margin-right:18px;padding-left:11px}.filters__location-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:15px 18px 38px 32px}.filters__location{background:url(https://ki-ri-to-kun.github.io/happy-booking/img/location.svg) no-repeat;padding-left:36px}.filters__location-km{font-size:13px}.search-results{background-color:#fff;position:absolute;top:355px;left:0;width:400px}.search-results__title{height:18px;font-size:13px;line-height:18px;color:#939ca0;padding-left:39px}.component{cursor:pointer;height:148px;width:400px;vertical-align:top;padding-left:39px;padding-right:45px;position:relative}.component:hover{background-color:#fdd017}.component__icon{position:absolute;top:14px;left:9px;background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/salon.svg);width:24px;height:25px}.component__distance{position:absolute;top:15px;right:23px;font-size:13px}.component__title-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.component__title{font-weight:800;margin-bottom:0;font-size:16px}.component__content{font-weight:500;font-size:13px;color:#939ca0}.component__schedule{display:block}.component__vector{font-size:13px;font-weight:500;line-height:18px}.modal{width:684px;height:670px;background:#fff;-webkit-box-shadow:0 20px 50px rgba(65,124,149,.3);box-shadow:0 20px 50px rgba(65,124,149,.3);border-radius:10px;padding:2.5625rem 3.75rem 2.1875rem 3.75rem;position:relative;left:-50%;z-index:-3}.modal-container{position:absolute;left:50%;padding-top:50px;padding-bottom:50px;z-index:-3}.modal__header{height:140px;padding-left:152px}.modal__header-title{margin-top:0;margin-bottom:8px}.modal__logo{position:absolute;width:120px;height:120px;left:60px;top:31px;background:url(https://ki-ri-to-kun.github.io/happy-booking/img/modal-logo.png)}.modal__component{font-weight:800;font-size:22px}.modal__close-button{position:absolute;top:31px;right:30px;background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/close.svg);width:24px;height:24px;cursor:pointer}.modal__close-button:hover{background-color:red}.modal__photo{height:168px;font-weight:800;margin-top:20px}.modal__photo-title{position:absolute;top:167px;left:67px; margin:0;}.modal__calendar{height:200px}ul{list-style-type:none}.modal__time{padding-left:27px;padding-right:13px}.modal__time li{display:inline-block;width:18%}.modal__time-container{position:absolute;left:213px;bottom:160px;line-height:50px;width:460px;height:120px}.modal__time-icon{background:url(https://ki-ri-to-kun.github.io/happy-booking/img/time.svg) no-repeat;width:30px;height:30px;position:absolute;bottom:62px;left:-8px}.modal__calendar-title{font-weight:800;font-size:16px}.modal__order{position:absolute;left:240px;bottom:31px}.modal__order-button{color:#fff;background:#c60d37;font-size:16px;font-family:avenir;font-weight:500;padding:15px 61px 16px 61px;border:1px solid #c60d37;border-radius:6px;cursor:pointer}input[type=radio]{margin:0;padding:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}.modal__time-label{cursor:pointer;display:inline;padding:9px 14px}input:checked+.modal__time-label{background:#c60d37;border:1px solid #c60d37;border-radius:6px;color:#fff}.label-class:hover{-webkit-filter:brightness(1.2) grayscale(.5) opacity(.9);-moz-filter:brightness(1.2) grayscale(.5) opacity(.9);filter:brightness(1.2) grayscale(.5) opacity(.9)}.modal__names-Anna{position:absolute;top:315px;left:101px;font-size:13px;font-weight:500}.modal__names-Karl{position:absolute;top:315px;left:217px;font-size:13px;font-weight:500}.modal__names-Eliza{position:absolute;top:315px;left:325px;font-size:13px;font-weight:500}.modal__names-Nadja{position:absolute;top:315px;left:432px;font-size:13px;font-weight:500}.modal__select-calendar{margin-top:13px;padding-left:2.2rem;padding-right:.95rem;background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/calendar.svg),url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg);background-position:left center,right center;background-repeat:no-repeat,no-repeat;-webkit-appearance:none;-moz-appearance:none;appearance:none;line-height:1.3}.disabled{color:#939ca0;pointer-events:none}.side-drawer.v-enter-active{-webkit-animation:slideInSide .3s ease-out forwards;animation:slideInSide .3s ease-out forwards}.modal-container.v-enter-active{-webkit-animation:slideInModal .3s ease-out forwards;animation:slideInModal .3s ease-out forwards}.side-drawer.v-leave-active{-webkit-animation:slideOutSide .3s ease-out forwards;animation:slideOutSide .3s ease-out forwards}.modal-container.v-leave-active{-webkit-animation:slideOutModal .3s ease-out forwards;animation:slideOutModal .3s ease-out forwards}@-webkit-keyframes slideInSide{from{-webkit-transform:translateX(-100%);transform:translateX(-100%)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideInSide{from{-webkit-transform:translateX(-100%);transform:translateX(-100%)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes slideInModal{from{-webkit-transform:translateY(-100%);transform:translateY(-100%)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes slideInModal{from{-webkit-transform:translateY(-100%);transform:translateY(-100%)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@-webkit-keyframes slideOutSide{from{-webkit-transform:translateX(0);transform:translateX(0)}to{-webkit-transform:translateX(-100%);transform:translateX(-100%)}}@keyframes slideOutSide{from{-webkit-transform:translateX(0);transform:translateX(0)}to{-webkit-transform:translateX(-100%);transform:translateX(-100%)}}@-webkit-keyframes slideOutModal{from{-webkit-transform:translateY(0);transform:translateY(0)}to{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}@keyframes slideOutModal{from{-webkit-transform:translateY(0);transform:translateY(0)}to{-webkit-transform:translateY(-100%);transform:translateY(-100%)}}.label-class{display:inline-block;cursor:pointer;position:relative}[type=radio]{-webkit-appearance:none;-moz-appearance:none;appearance:none}.div-class input:checked+.label-class::before{content:"";width:110px;height:110px;border-radius:50%;background:#c60d37;position:absolute;top:-4px;left:-4px;z-index:-1}.modal .div-class img{width:108px;height:108px;margin:0 -3.3px}
+
+.modal .div-class img {
+	display: block;
+	margin-bottom: 0.2rem;
+}
+
+
+.row {
+  margin: 0 -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  padding: 0 10px;
+}
+
+.col-25 {
+  width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.col-33 {
+  width: 33%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+
+.col-50 {
+  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.col-66 {
+  width: 66%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66%;
+          flex: 0 0 66%;
+}
+
+.col-75 {
+  width: 75%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.dashboard-date {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #939CA0;
+}
+
+.dashboard-sidebar {
+  overflow: auto;
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  padding: 30px;
+}
+
+.dashboard-sidebar__header-logo {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 125px;
+  height: 125px;
+  margin: 30px auto 35px auto;
+}
+
+.dashboard-sidebar__footer-logo {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 89px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.dash-main-menu {
+  margin-bottom: 200px;
+}
+
+.dash-main-menu__list {
+  padding: 0;
+}
+
+.dash-main-menu__item {
+  height: 50px;
+}
+
+.dash-main-menu__item--active {
+  font-weight: 800;
+}
+
+.dash-main-menu__item--active .icon {
+  background: #000;
+}
+
+.icon {
+  background: url("https://ki-ri-to-kun.github.io/happy-booking/img/icons.svg") 24px 24px no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  margin-right: 10px;
+  --bg-position: 24px 24px;
+  background-position: var(--bg-position);
+}
+
+.icon-dashboard {
+  --bg-position: -24px -24px;
+}
+
+.icon-calendar {
+  --bg-position: 0 0;
+}
+
+.icon-booking {
+  --bg-position: -72px -24px;
+}
+
+.icon-client {
+  --bg-position: -48px -24px;
+}
+
+.icon-kassa {
+  --bg-position: -96px -24px;
+}
+
+.icon-buh {
+  --bg-position: -120px -24px;
+}
+
+.icon-market {
+  --bg-position: -24px -48px;
+}
+
+.icon-settings {
+  --bg-position: 0 -48px;
+}
+
+.icon-logout {
+  --bg-position: -48px -48px;
+}
+
+.icon-mask {
+  -webkit-mask: url("https://ki-ri-to-kun.github.io/happy-booking/img/icons.svg") 24px 24px no-repeat;
+          mask: url("https://ki-ri-to-kun.github.io/happy-booking/img/icons.svg") 24px 24px no-repeat;
+  -webkit-mask-position: var(--bg-position);
+          mask-position: var(--bg-position);
+  background: #A1B3C5;
+}
+
+.dashboard-sidebar__footer-menu {
+  margin-bottom: 41px;
+}
+
+.dash-footer-menu__list {
+  padding: 0;
+  margin: 0;
+}
+
+.dash-footer-menu__item {
+  height: 50px;
+}
+
+.dashboard-sidebar__footer-title {
+  margin: 0;
+}
+
+.stats {
+  padding: 0 25px;
+  margin-right: 1.88rem;
+  -ms-flex-preferred-size: 58.14%;
+      flex-basis: 58.14%;
+}
+
+.stats__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+  height: 125px;
+  margin-bottom: 30px;
+}
+
+.stats__header-item {
+  -ms-flex-preferred-size: 120px;
+      flex-basis: 120px;
+}
+
+.stats__header-item-title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+.stats__table {
+  margin-bottom: 30px;
+}
+
+.stats__table-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats__table-head-title {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.stats__table-head-amount {
+  font-size: 13px;
+  line-height: 18px;
+  color: #939CA0;
+}
+
+.stats__table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+.stats__table-cell-time {
+  line-height: 22px;
+  -ms-flex-preferred-size: 11%;
+      flex-basis: 11%;
+}
+
+.stats__table-cell-name {
+  -ms-flex-preferred-size: 39%;
+      flex-basis: 39%;
+}
+
+.stats__table-cell-name-title {
+  margin: 0;
+  line-height: 22px;
+}
+
+.stats__table-cell-name-details {
+  font-size: 13px;
+  line-height: 18px;
+  color: #939CA0;
+}
+
+.stats__table-cell-description {
+  -ms-flex-preferred-size: 38%;
+  flex-basis: 38%;
+  text-align: left;
+}
+
+.stats__table-cell-price {
+  -ms-flex-preferred-size: 12%;
+  font-weight: 700;
+  text-align: right;
+  flex-basis: 12%;
+}
+
+.stats__diagramma-container {
+ 
+}
+
+.stats__diagramma-image {
+  width: 100%;
+  position: relative;
+  left: -25px;
+}
+
+.dashboard-container {
+  padding: 3.75rem 1.88rem 1.88rem 250px;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news {
+  -ms-flex-preferred-size: 41.86%;
+      flex-basis: 41.86%;
+}
+
+.news__title {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.news__box-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+@media(max-width: 1240px){
+	.dashboard-container {
+		flex-wrap: wrap;
+	}
+	.stats {
+		flex-basis: 100%;
+		margin-right: 0;
+		padding-right: 0;
+	}
+	.news {
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 992px) {
+  body,
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+	
+  .col {
+    text-align: center;
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .col-mobile-25 {
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+
+  .col-mobile-33 {
+    width: 33%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+  }
+
+  .col-mobile-50 {
+    width: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+
+  .col-mobile-66 {
+    width: 66%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66%;
+            flex: 0 0 66%;
+  }
+
+  .col-mobile-75 {
+    width: 75%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+  }
+}
+@media (max-width:500px){.side-drawer{-webkit-box-flex:100%;-ms-flex:100%;flex:100%;min-width:none}main{-webkit-box-flex:100%;-ms-flex:100%;flex:100%}.container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;min-width:320px}.filters__location-container{margin-top:0}.filters__location{position:relative;left:-100px}.filters__location-km{position:relative;left:-100px}}.webp .filters__select-calendar{background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/calendar.svg),url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg)}.webp .filters__select-location{background:url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg) no-repeat right center}.webp .header__logo{background:url(https://ki-ri-to-kun.github.io/happy-booking/img/logo.webp)}.webp .filters__select-service{background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/service.svg),url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg)}.webp .modal__logo{background:url(https://ki-ri-to-kun.github.io/happy-booking/img/modal-logo.webp)}.webp .modal__select-calendar{background-image:url(https://ki-ri-to-kun.github.io/happy-booking/img/calendar.svg),url(https://ki-ri-to-kun.github.io/happy-booking/img/polygon.svg)}
+.modal__name {
+	padding-left: 2.2rem;
+	font-size: 13px;
+}

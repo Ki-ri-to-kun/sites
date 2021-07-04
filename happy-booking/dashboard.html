@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="https://unpkg.com/vue@2"></script>
+</head>
+<body>
+    <aside class = "dashboard-sidebar">
+        <a href="https://ki-ri-to-kun.github.io/happy-booking/">
+            <picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/dash-logo.webp" type="image/webp"><img class = "dashboard-sidebar__header-logo" src="https://ki-ri-to-kun.github.io/happy-booking/img/dash-logo.png" alt="header-logo" /></picture>
+        </a>
+        
+              <nav class="dash-main-menu">
+            <ul class="dash-main-menu__list">
+                <li class="dash-main-menu__item dash-main-menu__item--active">
+                    <a href="#">
+                            <span class="icon icon-mask icon-dashboard"></span>Dashboard
+                    </a>  
+                </li>
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-calendar"></span>Kalender
+                    </a>  
+                </li>
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-booking"></span>Bokningar
+                    </a>  
+                </li>
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-client"></span>Kunder
+                    </a>  
+                </li>
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-kassa"></span>Kassa
+                    </a>  
+                </li>
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-buh"></span>Bokföring
+                    </a>  
+                </li>
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-market"></span>Marknadsföring
+                    </a>  
+                </li>
+            </ul>
+        </nav>
+
+    
+        <div class="dashboard-sidebar__footer-menu">
+            <h4 class="dashboard-sidebar__footer-title">Vincent Lindblom</h4>
+           <ul class="dash-footer-menu__list">
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-settings"></span>Inställningar
+                    </a>  
+                </li>
+                <li class="dash-main-menu__item">
+                    <a href="#">
+                            <span class="icon icon-mask icon-logout"></span>Utloggning
+                    </a>  
+                </li>
+            </ul>
+        </div>
+        <a href="https://ki-ri-to-kun.github.io/happy-booking/">
+            <picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/footer-logo.webp 1x, https://ki-ri-to-kun.github.io/happy-booking/img/footer-logo@2x.webp 2x" type="image/webp"><img class = "dashboard-sidebar__footer-logo" src="https://ki-ri-to-kun.github.io/happy-booking/img/footer-logo.png" srcset="https://ki-ri-to-kun.github.io/happy-booking/img/footer-logo@2x.png 2x" alt="footer-logo" /></picture>
+        </a>
+    </aside>
+    <div class="dashboard-container">
+        <span class = "dashboard-date">Fredag Okt 10, 2019  13:30</span>
+        <div class="stats">
+            <div class="row">
+                    <div class="col col-25">
+                        <div class="stats__header-item">
+                            <h4 class = "stats__header-item-title">42,9 tkr</h4>
+                            <p>Intäkter denna månad</p>
+                        </div>
+                    </div>
+                   
+                    <div class="col col-25">
+                        <div class="stats__header-item">
+                            <h4 class = "stats__header-item-title">6</h4>
+                            <p>Kunder idag</p>
+                        </div>
+                    </div>
+
+                    <div class="col col-25">
+                        <div class="stats__header-item">
+                            <h4 class = "stats__header-item-title">329 kr</h4>
+                            <p>merförsäljning per kund</p>
+                        </div>
+                    </div>
+
+                    <div class="col col-25">
+                        <div class="stats__header-item">
+                            <h4 class = "stats__header-item-title">960 tkr</h4>
+                            <p>Intäkter detta år</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="stats__table">
+                <div class="stats__table-head">
+                    <h3 class="stats__table-head-title">Kommande bokningar</h3>
+                    <span class="stats__table-head-amount">10 bokningar idag</span>
+                </div>
+                <div class="stats__table-row">
+                    <div class="stats__table-cell-time">
+                        <p>10:40</p>
+                    </div>
+                    <div class="stats__table-cell-name">
+                            <p class="stats__table-cell-name-title">Stina Johansson</p>
+                            <p class="stats__table-cell-name-details">Betald Online</p>
+                    </div>
+                    <div class="stats__table-cell-description">
+                        <p>Färg och klipping</p>
+                    </div>
+                    <div class="stats__table-cell-price">
+                        1980 kr
+                    </div>
+                </div>
+
+                <div class="stats__table-row">
+                    <div class="stats__table-cell-time">
+                        <p>11:20</p>
+                    </div>
+                    <div class="stats__table-cell-name"><p class="stats__table-cell-name-title">Per Fredriksson</p><p class="stats__table-cell-name-details">Betalas på plats</p>
+                    </div>
+                    <div class="stats__table-cell-description"><p>Klipping</p>
+                    </div>
+                    <div class="stats__table-cell-price">
+                        870 kr
+                    </div>
+                </div>
+
+                <div class="stats__table-row">
+                    <div class="stats__table-cell-time">
+                        <p>11:30</p>
+                    </div>
+                    <div class="stats__table-cell-name">
+                            <p class="stats__table-cell-name-title">Voctoria Nilsson</p>
+                            <p class="stats__table-cell-name-details">Betald Klarna Faktura</p>
+                    </div>
+                    <div class="stats__table-cell-description">
+                        <p>Uppsättning högtid</p>
+                    </div>
+                    <div class="stats__table-cell-price">
+                       2890 kr
+                    </div>
+                </div>
+
+                <div class="stats__table-row">
+                    <div class="stats__table-cell-time">
+                        <p>12:40</p>
+                    </div>
+                    <div class="stats__table-cell-name">
+                            <p class="stats__table-cell-name-title">Stina Johansson</p>
+                            <p class="stats__table-cell-name-details">Betald Online</p>
+                    </div>
+                    <div class="stats__table-cell-description">
+                        <p>Färg och klipping</p>
+                    </div>
+                    <div class="stats__table-cell-price">
+                        1980 kr
+                    </div>
+                </div>
+
+                <div class="stats__table-row">
+                    <div class="stats__table-cell-time">
+                        <p>14:00</p>
+                    </div>
+                    <div class="stats__table-cell-name">
+                            <p class="stats__table-cell-name-title">Per Fredriksson</p>
+                            <p class="stats__table-cell-name-details">Betalas på plats</p>
+                    </div>
+                    <div class="stats__table-cell-description">
+                        <p>Klipping</p>
+                    </div>
+                    <div class="stats__table-cell-price">
+                        870 kr
+                    </div>
+                </div>
+            </div>
+            <div class="stats__diagramma-container">
+                <picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/diagramma.webp" type="image/webp"><img class="stats__diagramma-image" src="https://ki-ri-to-kun.github.io/happy-booking/img/diagramma.png" alt="diagramma"></picture>
+            </div>
+        </div>
+        <div class="news">
+            <h4 class = "news__title">Nyheter från Wella</h4>
+            <div class="news__box">
+                <picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/news-1.webp" type="image/webp"><img class = "news__box-image" src="https://ki-ri-to-kun.github.io/happy-booking/img/news-1.png" alt=""></picture>
+                <h4>Vårens nyheter är här</h4>
+                <p>Praesent at tellus vitae arcu pulvinar aliquam. Mauris mattis, lorem a adipiscing lobortis, purus nibh bibendum neque, eu hendrerit nibh pede aliquet mauris.</p>
+                <a href="#">Läs mer</a>
+            </div>
+            <div class="news__box">
+                <picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/news-2.webp" type="image/webp"><img class = "news__box-image" src="https://ki-ri-to-kun.github.io/happy-booking/img/news-2.png" alt=""></picture>
+                <h4>Beställ idag med 10%</h4>
+                <p>Nam dictum laoreet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam mollis, lacus et consequat luctus, est sem accumsan eros, a sollicitudin quam leo ac metus. </p>
+                <a href="#">Läs mer</a>
+            </div>
+            <div class="news__box">
+                <picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/news-1.webp" type="image/webp"><img class = "news__box-image" src="https://ki-ri-to-kun.github.io/happy-booking/img/news-1.png" alt=""></picture>
+                <h4>Vårens nyheter är här</h4>
+                <p>Praesent at tellus vitae arcu pulvinar aliquam. Mauris mattis, lorem a adipiscing lobortis, purus nibh bibendum neque, eu hendrerit nibh pede aliquet mauris.</p>
+                <a href="#">Läs mer</a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

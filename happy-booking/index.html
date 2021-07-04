@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Client search and booking</title>
+	<link rel="stylesheet" href="css/style.min.css" />
+	<script src="https://unpkg.com/vue@2"></script>
+</head>
+
+<body>
+
+	
+	<div class="container">
+		<main>
+			<div class="dashboard-link" style = "position: fixed; left: 60%; background-color: rgb(245, 88, 88); border: 1px solid black; color: black; font-weight: 700;"> <a href="dashboard.html" >DASHBOARD</a></div>
+
+			<div class="map">
+				<picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/map.webp" type="image/webp"><img src="https://ki-ri-to-kun.github.io/happy-booking/img/map.png" class="map__img" /></picture>
+			</div>
+		</main>
+		<transition mode="out-in">
+			<aside class="side-drawer" v-if="sideDrawerIsOpen">
+				<div class="header">
+					<a href="https://ki-ri-to-kun.github.io/happy-booking/">
+					<div class="header__logo"></div>
+					</a>
+					<h4 class="header__title"> Boka frisör i hela sverige här {{sideDrawerIsOpen}} </h4>
+
+					<div class="filters">
+						<div class="filters__location-container">
+							<input class="filters__location" placeholder="Stad" />
+							<span class="filters__location-km"><small>
+									<select class="filters__select-location">
+										<option>+10 km</option>
+										<option>+20 km</option>
+										<option>+30 km</option>
+									</select></small></span>
+						</div>
+						<input class="filters__search" placeholder="Salong" />
+						<div class="filters__service-container">
+							<select class="filters__select-calendar">
+								<option>Idag</option>
+								<option>Idag</option>
+								<option>Idag</option>
+							</select>	
+							<select class="filters__select-service">
+								<option>Alla behandlingar</option>
+								<option>Alla behandlingar</option>
+								<option>Alla behandlingar</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="search-results">
+					<p class="search-results__title">1075 frisörer </p>
+
+					<div class="component" @click="toggleModal">
+						<div class="component__title-container">
+							<div class="component__icon"></div>
+							<h3 class="component__title"> Wade & Co. </h3>
+							<span class="component__distance">300 m</span>
+						</div>
+						<p class="component__content">Fatburs Brunnsgata 29, 118 28 Stockholm
+							www.hairsaloon.com
+							<span class="component__schedule">10:00 – 17:00</span>
+						</p>
+						<p class="component__vector">Haircut • Hairdressing • Colouring • Makeup</p>
+					</div>
+
+					<div class="component" @click="toggleModal">
+						<div class="component__title-container">
+							<div class="component__icon"></div>
+							<h3 class="component__title"> Hair Salon </h3>
+							<span class="component__distance">1 km</span>
+						</div>
+						<p class="component__content">Fatburs Brunnsgata 29, 118 28 Stockholm
+							www.hairsaloon.com
+							<span class="component__schedule">10:00 – 17:00</span>
+						</p>
+						<p class="component__vector">Haircut • Hairdressing • Colouring • Makeup</p>
+					</div>
+
+					<div class="component" @click="toggleModal">
+						<div class="component__title-container">
+							<div class="component__icon"></div>
+							<h3 class="component__title"> Barbers worldwide </h3>
+							<span class="component__distance">1.5 km</span>
+						</div>
+						<p class="component__content">Fatburs Brunnsgata 29, 118 28 Stockholm
+							www.hairsaloon.com
+							<span class="component__schedule">10:00 – 17:00</span>
+						</p>
+						<p class="component__vector">Haircut • Hairdressing • Colouring • Makeup</p>
+					</div>
+
+					<div class="component" @click="toggleModal">
+						<div class="component__title-container">
+							<div class="component__icon"></div>
+							<h3 class="component__title"> SoloHair </h3>
+							<span class="component__distance">1.7km</span>
+						</div>
+						<p class="component__content">Fatburs Brunnsgata 29, 118 28 Stockholm
+							www.hairsaloon.com
+							<span class="component__schedule">10:00 – 17:00</span>
+						</p>
+						<p class="component__vector">Haircut • Hairdressing • Colouring • Makeup</p>
+					</div>
+
+					<div class="component" @click="toggleModal">
+						<div class="component__title-container">
+							<div class="component__icon"></div>
+							<h3 class="component__title"> Wade & Co. </h3>
+							<span class="component__distance">300 m</span>
+						</div>
+						<p class="component__content">Fatburs Brunnsgata 29, 118 28 Stockholm
+							www.hairsaloon.com
+							<span class="component__schedule">10:00 – 17:00</span>
+						</p>
+						<p class="component__vector">Haircut • Hairdressing • Colouring • Makeup</p>
+					</div>
+				</div>
+			</aside>
+
+			<div class="modal-container" v-if="!sideDrawerIsOpen">
+				<div class="modal">
+					<div class="modal__header">
+						<div class="modal__logo"></div>
+						<div class="modal__component">
+							<h4 class="modal__header-title"> Wade & Co. </h4>
+							<p class="component__content">Fatburs Brunnsgata 29, 118 28 Stockholm <br />
+								www.hairsaloon.com
+								<span class="component__schedule">10:00 – 17:00</span>
+							</p>
+						</div>
+						<div @click="toggleModal" class="modal__close-button"></div>
+					</div>
+					<div class="modal__photo">
+
+						<p class="modal__photo-title"> Frisör </p>
+						<div class="div-class">
+
+							<input type="radio" name="person" id="Anna" />
+							<label class="label-class" for="Anna"><picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/Anna.webp" type="image/webp"/><img src="https://ki-ri-to-kun.github.io/happy-booking/img/Anna.png" /></picture><span class = "modal__name">Anna</span></label>
+
+							<input type="radio" name="person" id="Karl" checked />
+							<label class="label-class" for="Karl"><picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/Karl.webp" type="image/webp"><img src="https://ki-ri-to-kun.github.io/happy-booking/img/Karl.png" /></picture><span class = "modal__name">Karl</span></label>
+
+							<input type="radio" name="person" id="Eliza" />
+							<label class="label-class" for="Eliza"><picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/Eliza.webp" type="image/webp"><img src="https://ki-ri-to-kun.github.io/happy-booking/img/Eliza.png" /></picture><span class = "modal__name">Eliza</span></label>
+
+							<input type="radio" name="person" id="Nadja" />
+							<label class="label-class" for="Nadja"><picture><source srcset="https://ki-ri-to-kun.github.io/happy-booking/img/Nadja.webp" type="image/webp"/><img src="https://ki-ri-to-kun.github.io/happy-booking/img/Nadja.png" /></picture><span class = "modal__name">Nadja</span></label>
+
+						</div>
+
+					</div>
+					<!--Календарь-->
+					<div class="modal__calendar">
+						<p class="modal__calendar-title"> Välj en tid </p>
+						<select class="modal__select-calendar">
+							<option>Today</option>
+							<option>Today</option>
+							<option>Today</option>
+						</select>
+
+						<div class="modal__time-container">
+							<div class="modal__time-icon"></div>
+							<ul class="modal__time">
+								<li><input type="radio" name="time" id="10:00" value="10:00"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="10:00">10:00</label></li>
+								<li><input type="radio" name="time" id="10:30" value="10:30"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="10:30">10:30</label></li>
+								<li><input type="radio" name="time" id="11:00" value="11:00"
+										v-model="userBooking.time" /><label class="modal__time-label disabled"
+										for="11:00">11:00</label></li>
+								<li><input type="radio" name="time" id="11:30" value="11:30"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="11:30">11:30</label></li>
+								<li><input type="radio" name="time" id="12:00" value="12:00"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="12:00">12:00</label></li>
+								<li><input type="radio" name="time" id="12:30" value="12:30"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="12:30">12:30</label></li>
+								<li><input type="radio" name="time" id="13:00" value="13:00"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="13:00">13:00</label></li>
+								<li><input type="radio" name="time" id="13:30" value="13:30"
+										v-model="userBooking.time" /><label class="modal__time-label disabled"
+										for="13:30">13:30</label></li>
+								<li><input type="radio" name="time" id="14:00" value="14:00"
+										v-model="userBooking.time" /><label class="modal__time-label disabled"
+										for="14:00">14:00</label></li>
+								<li><input type="radio" name="time" id="14:30" value="14:30"
+										v-model="userBooking.time" /><label class="modal__time-label disabled"
+										for="14:30">14:30</label></li>
+								<li><input type="radio" name="time" id="15:00" value="15:00"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="15:00">15:00</label></li>
+								<li><input type="radio" name="time" id="15:30" value="15:30"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="15:30">15:30</label></li>
+								<li><input type="radio" name="time" id="16:00" value="16:00"
+										v-model="userBooking.time" /><label class="modal__time-label"
+										for="16:00">16:00</label></li>
+								<li><input type="radio" name="time" id="16:30" value="16:30"
+										v-model="userBooking.time" /><label class="modal__time-label disabled"
+										for="16:30">16:30</label></li>
+							</ul>
+						</div>
+					</div>
+					<!--Кнопка-->
+					<div class="modal__order">
+						<button class="modal__order-button" @click="booking"> Boka nu</button>
+					</div>
+				</div>
+		</transition>
+	</div>
+	</div>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>
