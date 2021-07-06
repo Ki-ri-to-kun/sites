@@ -40,7 +40,7 @@ new Vue({
 			painting: {
 				painting1: 0,
 				painting2: 2321,
-				painting3: 0
+				painting3: null
 			},
 			cabine: {
 				cabine1: 0,

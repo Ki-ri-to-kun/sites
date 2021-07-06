@@ -179,6 +179,18 @@ ul {
 }
 */
 
+.icon {
+	width: 25px;
+	height: 15px;
+    display: inline-block;
+	position: relative;
+	top: 20px;
+	left: 19px;
+}
+.icon-tick {
+	background: url('../img/tick.svg')  no-repeat;
+}
+
 [type="radio"],
 [type="checkbox"] {
   display: none;
@@ -228,11 +240,6 @@ ul {
 .menu__item {
   padding: 0 20px;
   margin-left: -15px;
-}
-
-.menu__item.menu__item--contacts {
-	
-	
 }
 
 .menu__item.menu__item--contacts a {
@@ -483,27 +490,10 @@ hr {
   margin-bottom: 26px;
 }
 
-.box__label {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-}
 
-.box__label::before {
-  content: '';
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 42px;
-  top: 156.43px;
-  background: #fff;
-  border-radius: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  z-index: 1;
-}
 
-.box__label-no-image .card {
-	min-height: 278px;
+.no-image.card {
+  min-height: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,35 +506,18 @@ hr {
           justify-content: flex-end;
 }
 
-.box__label-no-image::before {
-  content: '';
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 33px;
-  top: 40.43px;
-  background: #fff;
-  border-radius: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  z-index: 1;
-}
 
-.box input:checked + .box__label.box__label-no-image::before {
-  content: url("../img/selected.png");
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 33px;
-  top: 40.43px;
-  border-radius: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  z-index: 1;
+
+.box input:checked + .no-image .card-check{
+ 
 }
 
 .card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 100%;
- 
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
 
 .card__img {
@@ -633,20 +606,29 @@ hr {
 }
 
 
-.box input:checked + .box__label.card {
+.box input:checked + .card {
   border: 1px solid #30B686;
 }
 
-.box input:checked + .box__label::before {
-  content: url("../img/selected.png");
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 42px;
-  top: 156.43px;
-  border-radius: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  z-index: 1;
+.card-check {
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	left: 42px;
+	top: 156px;
+	border-radius: 40px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	z-index: 1;
+}
+
+.no-image .card-check {
+	top: 25px;
+}
+
+.box input:checked ~ .card .card-check {
+	background-color: #30B686;
 }
 
 .footer {
