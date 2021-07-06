@@ -317,10 +317,6 @@ ul {
   font-weight: 600;
 }
 
-.sidebar__info-optional {
-  margin-bottom: 32px;
-}
-
 .sidebar__btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,9 +358,21 @@ ul {
   transition: all 0.3s;
 }
 
+.sidebar__line {
+	height: 1px;
+	background-color: url('img/line.svg');
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .sidebar__btn-group a:hover {
   background-color: #001E74;
   color: #fff;
+}
+
+hr {
+	height: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 16px;
 }
 
 .sidebar__btn-group a:first-child {
