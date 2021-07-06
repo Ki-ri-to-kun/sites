@@ -285,7 +285,7 @@ ul {
 .sidebar__img {
   width: 100%;
   height: 193px;
-  background: url("../img/sidebar-img.png") -60px -40px no-repeat;
+  background: url("../img/sidebar-img.png") no-repeat;
   background-size: cover;
   -webkit-filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.07));
           filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.07));
@@ -812,7 +812,7 @@ to {
   .sidebar__img {
     width: 100%;
     height: 193px;
-    background: url("../img/sidebar-img@2x.png") -60px -40px no-repeat;
+    background: url("../img/sidebar-img@2x.png") no-repeat;
     background-size: cover;
     -webkit-filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.07));
             filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.07));
@@ -820,11 +820,11 @@ to {
   }
 }
 
-.webp .sidebar__img { background: url(../img/sidebar-img.webp) -60px -40px no-repeat; }
+.webp .sidebar__img { background: url(../img/sidebar-img.webp) no-repeat; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
 
-  .webp .sidebar__img { background: url(../img/sidebar-img@2x.webp) -60px -40px no-repeat; }
+  .webp .sidebar__img { background: url(../img/sidebar-img@2x.webp) no-repeat; }
 }
 
 
