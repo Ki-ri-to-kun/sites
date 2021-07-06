@@ -231,13 +231,24 @@ ul {
 }
 
 .menu__item.menu__item--contacts {
-  padding-right: 0;
+	
+	
 }
 
-.menu__item:hover a {
+.menu__item.menu__item--contacts a {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 180px;
+	height: 48px;
+	border-radius: 274px;
+	background-color: #fff;
+	color: #151515;
+}
+
+.menu__item a:hover {
   color: #EF6638;
   border-bottom: 3px solid #EF6638;
-  padding-bottom: 15px;
 }
 
 .menu__link {
@@ -247,16 +258,15 @@ ul {
   -webkit-transition: color .2s linear, background-color .2s linear;
   -o-transition: color .2s linear, background-color .2s linear;
   transition: color .2s linear, background-color .2s linear;
+  padding-bottom: 15px;
 }
 
-.menu__item.menu__item--contacts a {
-  color: #151515;
-  background-color: #fff;
-  padding: 13px 50px;
-  border-radius: 274px;
+.menu__item.menu__item--contacts a:hover {
+	background-color: #EF6638;
+	color: #fff;
 }
 
-.menu__item.menu__item--contacts:hover a {
+.menu__item.menu__item--contacts a:hover {
   color: #fff;
   background-color: #EF6638;
   border: none;
@@ -371,7 +381,7 @@ ul {
 
 hr {
 	height: 0;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	margin-bottom: 16px;
 }
 
@@ -572,19 +582,31 @@ hr {
   font-weight: 400;
 }
 
-.card__form-group {
+.radio-group {
   position: relative;
   margin-bottom: 24px;
 }
 
-.card__form-group label::before {
+.radio {
+	display: block;
+	margin-bottom: 1rem
+}
+
+.radio-horizontal {
+	display: inline-block;
+	min-width: 5rem;
+	margin-right: 1rem;
+	}
+
+
+.radio-icon {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   margin-right: 8px;
+  position: relative;
   top: 6px;
   left: 0;
-  position: relative;
   background-color: transparent;
   content: '';
   display: inline-block;
@@ -593,38 +615,23 @@ hr {
   border: 2px solid #001E74;
 }
 
-.card__form-group [type="radio"]:checked + label::after {
+.radio-input:checked ~.radio-icon::before {
   border-radius: 50%;
   width: 14px;
   height: 14px;
-  position: absolute;
-  top: 11px;
-  left: 9px;
+  position: relative;
+  top: 3px;
+  left: 3px;
   content: " ";
   display: block;
-  background: #30B686;
+  background-color: #30B686; 
 }
 
-.card__form-group [type="radio"]:checked + label::before {
+.radio-input:checked ~ .radio-icon {
   opacity: 1;
   border: 2px solid #30B686;
 }
 
-.card__form-group-row .col {
-  position: relative;
-}
-
-.card__form-group-row [type="radio"]:checked + label::after {
-  border-radius: 50%;
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  top: 11px;
-  left: 19px;
-  content: " ";
-  display: block;
-  background: #30B686;
-}
 
 .box input:checked + .box__label.card {
   border: 1px solid #30B686;
@@ -821,10 +828,7 @@ to {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
   .sidebar__img {
-    width: 100%;
-    height: 193px;
-    background: url("../img/sidebar-img@2x.png") no-repeat;
-    background-size: cover;
+    background-image: url("../img/sidebar-img@2x.png");
     -webkit-filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.07));
             filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.07));
     margin-bottom: 36px;

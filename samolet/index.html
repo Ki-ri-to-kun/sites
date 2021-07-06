@@ -350,21 +350,23 @@
 										<p class="card__info-title">Fabric cabin upholstery</p>
 
 										<div class="card__info-description">
-											<div class="card__form-group">
-												<input type="radio" name="cabineItem" id="cabineItem1" checked>
-												<label for="cabineItem1">Blue navy</label>
+											<div class="radio-group">
+												<label class="radio">
+													<input class="radio-input" type="radio" name="cabineItem" id="cabineItem1" checked>
+													<span class="radio-icon"></span>Blue navy
+												</label>
+												<label class="radio">
+													<input class="radio-input" type="radio" name="cabineItem" id="cabineItem2">
+													<span class="radio-icon"></span>Gray
+												</label>
+												<label class="radio">
+													<input class="radio-input" type="radio" name="cabineItem" id="cabineItem3">
+													<span class="radio-icon"></span>Black
+												</label>
 											</div>
-											<div class="card__form-group">
-												<input type="radio" name="cabineItem" id="cabineItem2">
-												<label for="cabineItem2">Gray</label>
-											</div>
-											<div class="card__form-group">
-												<input type="radio" name="cabineItem" id="cabineItem3">
-												<label for="cabineItem3">Black</label>
-											</div>
+											<p class="card__info-price card__info-price--included">Included in base price
+											</p>
 										</div>
-										<p class="card__info-price card__info-price--included">Included in base price
-										</p>
 									</div>
 							</label>
 						</div>
@@ -435,51 +437,45 @@
 									<div class="card__info">
 										<p class="card__info-title">Pack 1</p>
 										<div class="card__info-description">
-											<div class="card__form-group card__form-group-row">
-												<p>Magnetic compass, Falcon</p>
-												<div class="row">
-													<div class="col col-50">
-														<input type="radio" name="compass" id="compass1" checked>
-														<label for="compass1">N</label>
-													</div>
-													<div class="col col-50">
-														<input type="radio" name="compass" id="compass2">
-														<label for="compass2">S</label>
-													</div>
+												<div class="radio-group">
+													<p>Magnetic compass, Falcon</p>
+													<label class = "radio radio-horizontal">
+														<input class="radio-input" type="radio" name="compass" id="compass1" checked>
+														<span class="radio-icon"></span>N
+													</label>
+													<label class = "radio radio-horizontal">
+														<input class="radio-input" type="radio" name="compass" id="compass2">
+														<span class="radio-icon"></span>S
+													</label>
+												</div>
+												<div class="radio-group">
+													<p>Airspeed, W/ARC, Winter</p>
+													<label class = "radio radio-horizontal">
+														<input class="radio-input" type="radio" name="airspeed" id="airspeed1" checked>
+														<span class="radio-icon"></span>57
+													</label>
+													<label class = "radio radio-horizontal">
+														<input class="radio-input" type="radio" name="airspeed" id="airspeed2">
+														<span class="radio-icon"></span>80
+													</label>
+												</div>
+												
+												<div class="radio-group">
+													<p>Altimeter, W/BARO, Winter</p>
+														<label class = "radio radio-horizontal">
+															<input class="radio-input" type="radio" name="altimetr" id="altimetr1" checked>
+															<span class="radio-icon"></span>57
+														</label>
+														<label class = "radio radio-horizontal">
+															<input class="radio-input" type="radio" name="altimetr" id="altimetr2">
+															<span class="radio-icon"></span>80
+														</label>
+												</div>
+												
 												</div>
 											</div>
-
-											<div class="card__form-group card__form-group-row">
-												<p>Airspeed, W/ARC, Winter</p>
-												<div class="row">
-													<div class="col col-50">
-														<input type="radio" name="airspeed" id="airspeed1" checked>
-														<label for="airspeed1">57</label>
-													</div>
-													<div class="col col-50">
-														<input type="radio" name="airspeed" id="airspeed2">
-														<label for="airspeed2">80</label>
-													</div>
-												</div>
-											</div>
-
-											<div class="card__form-group card__form-group-row">
-												<p>Altimeter, W/BARO, Winter</p>
-												<div class="row">
-													<div class="col col-50">
-														<input type="radio" name="altimetr" id="altimetr1" checked>
-														<label for="altimetr1">57</label>
-													</div>
-													<div class="col col-50">
-														<input type="radio" name="altimetr" id="altimetr2">
-														<label for="altimetr2">80</label>
-													</div>
-												</div>
-											</div>
-										</div>
 										<p class="card__info-price card__info-price--included">Included in base price
 										</p>
-									</div>
 							</label>
 						</div>
 						<div class="col col-33">
@@ -511,30 +507,28 @@
 								<div class="card__info">
 									<p class="card__info-title">Units</p>
 									<div class="card__info-description">
-										<div class="card__form-group card__form-group-row">
-											<div class="row">
-												<div class="col col-50">
-													<input type="radio" name="speed" id="km" checked>
-													<label for="km">Km/h</label>
-												</div>
-												<div class="col col-50">
-													<input type="radio" name="speed" id="kts">
-													<label for="kts">KTS</label>
-												</div>
-											</div>
+										<div class="radio-group">
+												<label class = "radio radio-horizontal">
+													<input class="radio-input" type="radio" name="speed" id="km" checked>
+													<span class="radio-icon"></span>Km/h
+												</label>
+												
+												<label class = "radio radio-horizontal">
+													<input class="radio-input" type="radio" name="speed" id="kts">
+													<span class="radio-icon"></span>KTS
+												</label>	
 										</div>
 
-										<div class="card__form-group card__form-group-row">
-											<div class="row">
-												<div class="col col-50">
-													<input type="radio" name="distance" id="m" checked>
-													<label for="m">M</label>
-												</div>
-												<div class="col col-50">
-													<input type="radio" name="distance" id="ft">
-													<label for="ft">Ft</label>
-												</div>
-											</div>
+										<div class="radio-group">
+											<label class = "radio radio-horizontal">
+													<input class="radio-input" type="radio" name="distance" id="m" checked>
+													<span class="radio-icon"></span>M
+											</label>
+											
+											<label class = "radio radio-horizontal">
+													<input class="radio-input" type="radio" name="distance" id="ft">
+													<span class="radio-icon"></span>Ft
+											</label>
 										</div>
 									</div>
 								</div>
