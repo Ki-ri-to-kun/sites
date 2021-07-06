@@ -468,6 +468,7 @@ ul {
 .box__label {
   cursor: pointer;
   position: relative;
+  display: inline-block;
 }
 
 .box__label::before {
@@ -484,6 +485,7 @@ ul {
 }
 
 .box__label-no-image .card {
+	min-height: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +525,8 @@ ul {
 
 .card {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  min-height: 278px;
+  height: 100%;
+ 
 }
 
 .card__img {
@@ -615,7 +618,7 @@ ul {
   background: #30B686;
 }
 
-.box input:checked + .box__label .card {
+.box input:checked + .box__label.card {
   border: 1px solid #30B686;
 }
 
