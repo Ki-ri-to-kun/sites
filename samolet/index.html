@@ -682,7 +682,7 @@
 
 				<div class="box">
 					<h4 class="box__title">AUTOPILOT AND EXTRA FEATURES</h4>
-					<div class="row">
+					<div class="row row-box">
 						<div class="col col-33">
 							<input type="checkbox" name="autopilot" id="autopilot1"
 								v-model = "selectedOptionalProducts" :value="productPrices.autopilot.autopilot1" />
@@ -764,12 +764,12 @@
 					</div>
 				</div>
 
-				<div class="box">
+					<div class="box">
 					<h4 class="box__title">PARACHUTE</h4>
 					<div class="row">
 						<div class="col col-33">
-							<input type="checkbox" name="parachute" id="parachute1"
-								v-model = "selectedOptionalProducts" :value="productPrices.parachute.parachute1" />
+							<input type="radio" name="parachute" id="parachute1"
+								v-model = "selectedMainProducts.parachute" :value="productPrices.parachute.parachute1" />
 							<label class="box__label box__label-no-image" for="parachute1">
 								<div class="card">
 									<div class="card__info">
@@ -785,8 +785,8 @@
 							</label>
 						</div>
 						<div class="col col-33">
-							<input type="checkbox" name="parachute" id="parachute2"
-							v-model = "selectedOptionalProducts" :value="productPrices.parachute.parachute2" />
+							<input type="radio" name="parachute" id="parachute2"
+							v-model = "selectedMainProducts.parachute" :value="productPrices.parachute.parachute2" />
 							<label class="box__label box__label-no-image" for="parachute2">
 								<div class="card">
 									<div class="card__info">
@@ -877,7 +877,7 @@
 			</div>
 
 			<div class="sidebar__btn-group">
-				<a href="#" @click = "makeOrder">Place Order</a>
+				<a class = "btn btn-primary" href="#" @click = "makeOrder">Place Order</a>
 				<a href="#">Finance</a>
 			</div>
 		</aside>
@@ -901,26 +901,27 @@
             </div>
             <div class="col col-33"> <nav class = "menu">
                 <ul class = "menu__list menu__list--columns">
+				
+				
+				<div class = "row">
+				<div class = "col col-50">
                     <li class = "menu__item"><a class = "menu__link" href="#">home</a></li>
                     <li class = "menu__item"><a class = "menu__link" href="#">inventory</a></li>
                     <li class = "menu__item"><a class = "menu__link" href="#">Configurator</a></li>
-                    <li class = "break"></li>
+                </div>
+				<div class = "col col-50">
                     <li class = "menu__item"><a class = "menu__link" href="#">Warranty & Support</a></li>
                     <li class = "menu__item"><a class = "menu__link" href="#">FIND US</a></li>
+				</div>
+				
+				</div>
                 </ul>
             </nav>
             </div>
-            <div class="col col-33"> <ul class="social">
-                <li class="social__item">
-                    <a href="#" class="social__link"><picture><source srcset="./img/facebook.svg" type="image/webp"><img src="./img/facebook.svg" alt="facebook icon" class="social__img"></picture></a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#" class="social__link"><picture><source srcset="./img/twitter.svg" type="image/webp"><img src="./img/twitter.svg" alt="twitter icon" class="social__img"></picture></a>
-                  </li>
-                <li class="social__item">
-                  <a href="#" class="social__link"><picture><source srcset="./img/instagram.svg" type="image/webp"><img src="./img/instagram.svg" alt="instagram icon" class="social__img"></picture></a>
-                </li>  
-              </ul>
+            <div class="col col-33 right"> 
+                <a href="#" class="social"><img src="./img/facebook.svg" alt="facebook icon" class="social__img"></a>
+                <a href="#" class="social"><img src="./img/twitter.svg" alt="twitter icon" class="social__img"></a>
+                <a href="#" class="social"><img src="./img/instagram.svg" alt="instagram icon" class="social__img"></a>
             </div>
         </div>
 
