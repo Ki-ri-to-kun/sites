@@ -201,6 +201,9 @@ ul {
   padding: 0 10px;
   margin: 0 auto;
   position: relative;
+  
+  display:flex;
+  justify-content: space-between;
 }
 
 .header {
@@ -293,10 +296,13 @@ ul {
 }
 
 .sidebar {
-  position: absolute;
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  align-self: flex-start; 
   top: 0;
   right: 0;
   width: 229px;
+  margin-bottom: 243px;
 }
 
 .sidebar__img {
@@ -520,12 +526,13 @@ hr {
   display: inline-block;
 }
 
+/*
 .card__img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-}
+}*/
 
 .card__info {
   padding: 24px 32px;
@@ -610,6 +617,10 @@ hr {
   border: 1px solid #30B686;
 }
 
+.card-image img {
+	width: 100%;
+}
+
 .card-check {
 	display: inline-block;
 	width: 56px;
@@ -637,6 +648,7 @@ hr {
 }
 
 .footer-container {
+  display: block;
   padding-top: 80px;
   padding-bottom: 0px;
   padding-right: 0;
