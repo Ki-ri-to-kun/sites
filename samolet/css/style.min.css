@@ -201,15 +201,22 @@ ul {
   padding: 0 10px;
   margin: 0 auto;
   position: relative;
-  
-  display:flex;
+}
+
+.wrapper {
+display:flex;
   justify-content: space-between;
 }
 
 .header {
-  height: 440px;
+  height: 96px;
   background-color: #1E2230;
-  margin-bottom: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  
 }
 
 .header-container {
@@ -288,18 +295,22 @@ ul {
   font-size: 90px;
   font-weight: 700;
   line-height: 109px;
+  letter-spacing: 0.02rem;
   color: #fff;
   text-transform: uppercase;
   -webkit-transform: translateY(95px);
       -ms-transform: translateY(95px);
           transform: translateY(95px);
+		  padding: 206px 100px 125px 100px;
+		  background-color: #1E2230;
+		  margin: 0 0 245px;
 }
 
 .sidebar {
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   align-self: flex-start; 
-  top: 0;
+  top: 96px;
   right: 0;
   width: 229px;
   margin-bottom: 243px;
