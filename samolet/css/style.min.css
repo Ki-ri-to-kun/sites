@@ -509,32 +509,21 @@ hr {
 
 
 
-.no-image.card {
-  min-height: 278px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.no-image .card-image {
+	padding-top: 28%;
 }
 
 
 
-.box input:checked + .no-image .card-check{
- 
-}
+
 
 .card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 100%;
   cursor: pointer;
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -547,6 +536,9 @@ hr {
 
 .card__info {
   padding: 24px 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__info-title {
@@ -565,6 +557,7 @@ hr {
 }
 
 .card__info-price {
+  margin-top: auto;
   font-weight: 600;
 }
 
@@ -638,7 +631,7 @@ hr {
 	height: 56px;
 	position: absolute;
 	left: 40px;
-	bottom: 40px;
+	bottom: 30px;
 	border-radius: 40px;
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	background-color: #fff;
@@ -646,7 +639,7 @@ hr {
 }
 
 .no-image .card-check {
-	top: 25px;
+	bottom: 0;
 }
 
 .box input:checked ~ .card .card-check {

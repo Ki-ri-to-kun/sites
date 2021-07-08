@@ -386,9 +386,9 @@
 													<span class="radio-icon"></span>Black
 												</label>
 											</div>
-											<p class="card__info-price card__info-price--included">Included in base price
-											</p>
 										</div>
+										<p class="card__info-price card__info-price--included">Included in base price
+											</p>
 									</div>
 							</label>
 						</div>
@@ -422,7 +422,9 @@
 							<input type="radio" name="basic" id="basic1"
 							v-model = "selectedMainProducts.basic" :value="productPrices.basic.basic1" />
 							<label class=" no-image card" for="basic1">
+									<div class = "card-image" >
 									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Tow bar attachment on nose landing gear</p>
 										<div class="card__info-description">
@@ -435,7 +437,9 @@
 							<input type="radio" name="basic" id="basic2"
 							v-model = "selectedMainProducts.basic" :value="productPrices.basic.basic2" />
 							<label class=" no-image card" for="basic2">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Tow breaks</p>
 										<div class="card__info-description">
@@ -502,9 +506,10 @@
 												</div>
 												
 												</div>
-											</div>
-										<p class="card__info-price card__info-price--included">Included in base price
+												<p class="card__info-price card__info-price--included">Included in base price
 										</p>
+											</div>
+										
 							</label>
 						</div>
 						<div class="col col-33">
@@ -578,7 +583,9 @@
 							<input type="checkbox" name="fseat" id="fseat1"
 								v-model = "selectedOptionalProducts" :value="productPrices.fseat.fseat1" />
 							<label class=" no-image card" for="fseat1">
-								<span class="card-check"><span class="icon icon-tick"></span></span>
+									<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">ELT</p>
 										<div class="card__info-description">
@@ -593,7 +600,9 @@
 							<input type="checkbox" name="fseat" id="fseat2"
 							v-model = "selectedOptionalProducts"  :value="productPrices.fseat.fseat2" />
 							<label class=" no-image card" for="fseat2">
-								<span class="card-check"><span class="icon icon-tick"></span></span>
+									<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Battery Pack</p>
 										<div class="card__info-description">
@@ -608,7 +617,9 @@
 							<input type="checkbox" name="fseat" id="fseat3"
 							v-model = "selectedOptionalProducts"  :value="productPrices.fseat.fseat3" />
 							<label class=" no-image card" for="fseat3">
-								<span class="card-check"><span class="icon icon-tick"></span></span>
+									<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Battery</p>
 										<div class="card__info-description">
@@ -692,7 +703,9 @@
 							<input type="checkbox" name="autopilot" id="autopilot1"
 								v-model = "selectedOptionalProducts" :value="productPrices.autopilot.autopilot1" />
 							<label class="no-image card" for="autopilot1">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Autopilot</p>
 										<div class="card__info-description">
@@ -706,7 +719,9 @@
 							<input type="checkbox" name="autopilot" id="autopilot2"
 							v-model = "selectedOptionalProducts"  :value="productPrices.autopilot.autopilot2" />
 							<label class="no-image card" for="autopilot2">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Autopilot control panel </p>
 										<div class="card__info-description">
@@ -720,7 +735,9 @@
 							<input type="checkbox" name="autopilot" id="autopilot3"
 							v-model = "selectedOptionalProducts"  :value="productPrices.autopilot.autopilot3" />
 							<label class="no-image card" for="autopilot3">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">KNOB control panel</p>
 										<div class="card__info-description">
@@ -737,7 +754,9 @@
 							<input type="checkbox" name="autopilot" id="autopilot4"
 							v-model = "selectedOptionalProducts"  :value="productPrices.autopilot.autopilot4" />
 							<label class=" no-image card" for="autopilot4">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Antenna</p>
 										<div class="card__info-description">
@@ -751,7 +770,9 @@
 							<input type="checkbox" name="autopilot" id="autopilot5"
 							v-model = "selectedOptionalProducts"  :value="productPrices.autopilot.autopilot5" />
 							<label class=" no-image card" for="autopilot5">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">Air avionics</p>
 										<div class="card__info-description">
@@ -771,7 +792,9 @@
 							<input type="radio" name="parachute" id="parachute1"
 								v-model = "selectedMainProducts.parachute" :value="productPrices.parachute.parachute1" />
 							<label class="no-image card" for="parachute1">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">472 KG</p>
 										<div class="card__info-description">
@@ -787,7 +810,9 @@
 							<input type="radio" name="parachute" id="parachute2"
 							v-model = "selectedMainProducts.parachute" :value="productPrices.parachute.parachute2" />
 							<label class=" no-image card" for="parachute2">
-							<span class="card-check"><span class="icon icon-tick"></span></span>
+								<div class = "card-image" >
+									<span class="card-check"><span class="icon icon-tick"></span></span>
+								</div>
 									<div class="card__info">
 										<p class="card__info-title">600 KG</p>
 										<div class="card__info-description">
