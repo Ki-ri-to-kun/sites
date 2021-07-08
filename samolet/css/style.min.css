@@ -507,15 +507,9 @@ hr {
   margin-bottom: 26px;
 }
 
-
-
 .no-image .card-image {
 	padding-top: 28%;
 }
-
-
-
-
 
 .card {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -524,21 +518,19 @@ hr {
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: all ease-in .3s;
 }
-
-/*
-.card__img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}*/
 
 .card__info {
   padding: 24px 32px;
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.card__info-price {
+  margin-top: auto;
+  font-weight: 600;
 }
 
 .card__info-title {
@@ -556,10 +548,6 @@ hr {
   margin-bottom: 12px;
 }
 
-.card__info-price {
-  margin-top: auto;
-  font-weight: 600;
-}
 
 .card__info-price--included {
   color: #737782;
@@ -636,6 +624,7 @@ hr {
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	background-color: #fff;
 	z-index: 1;
+	transition: all ease-in .3s;
 }
 
 .no-image .card-check {
