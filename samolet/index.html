@@ -211,8 +211,8 @@
 						<h4 class="box__title">Engine</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="radio" name="engines" id="engine1" v-model="selectedMainProducts.engines"
-									:value="productPrices.engines.engine1" />
+								<input type="radio" name="engines" id="engine1" @input = "addPrice('engine1')"
+									:data-price="productPrices.engines.engine1" value = "engine1" ref = "engine1"/>
 								<label class=" card" for="engine1">
 									<div class="card-image">
 										<picture>
@@ -240,8 +240,8 @@
 							</div>
 							<div class="col col-33">
 
-								<input type="radio" name="engines" id="engine2" v-model="selectedMainProducts.engines"
-									:value="productPrices.engines.engine2" />
+								<input type="radio" name="engines" id="engine2" @input = "addPrice('engine2')"
+									:data-price="productPrices.engines.engine2" value = "engine2" ref = "engine2"/>
 								<label class=" card" for="engine2">
 									<div class="card-image">
 										<picture>
@@ -270,8 +270,8 @@
 							</div>
 							<div class="col col-33">
 
-								<input type="radio" name="engines" id="engine3" v-model="selectedMainProducts.engines"
-									:value="productPrices.engines.engine3" />
+								<input type="radio" name="engines" id="engine3" @input = "addPrice('engine3')"
+									:data-price="productPrices.engines.engine3" value = "engine3" ref = "engine3"/>
 								<label class=" card" for="engine3">
 									<div class="card-image">
 										<picture>
@@ -305,8 +305,9 @@
 						<h4 class="box__title">PAINTING SCHEME</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="radio" name="painting" id="painting1"
-									v-model="selectedMainProducts.painting" :value="productPrices.painting.painting1" />
+								<input type="radio" name="painting" id="painting1" @input = "addPrice('painting1')"
+									 :data-price="productPrices.painting.painting1" 
+									value = "painting1" ref = "painting1"/>
 								<label class=" card" for="painting1">
 									<div class="card-image">
 										<picture>
@@ -329,8 +330,9 @@
 							</div>
 
 							<div class="col col-33">
-								<input type="radio" name="painting" id="painting2"
-									v-model="selectedMainProducts.painting" :value="productPrices.painting.painting2" />
+								<input type="radio" name="painting" id="painting2" @input = "addPrice('painting2')"
+									 :data-price="productPrices.painting.painting2" 
+									value = "painting2" ref = "painting2"/>
 								<label class=" card" for="painting2">
 									<div class="card-image">
 										<picture>
@@ -352,7 +354,8 @@
 							</div>
 
 							<div class="col col-33">
-								<input type="radio" name="painting" id="painting3" />
+								<input type="radio" name="painting" id="painting3" @input = "addPrice('painting3')"
+								 value = "painting3" ref = "painting3" :data-price="productPrices.painting.painting3"/>
 								<label class=" card" for="painting3">
 									<div class="card-image">
 										<picture>
@@ -378,8 +381,7 @@
 						<h4 class="box__title">CABIN INTERIORS</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="radio" name="cabine" id="cabine1" v-model="selectedMainProducts.cabine"
-									:value="productPrices.cabine.cabine1" />
+<input type="radio" name="cabine" id="cabine1" @input = "addPrice('cabine1')" value = "cabine1" ref="cabine1" :data-price="productPrices.cabine.cabine1" />
 								<label class=" card" for="cabine1">
 									<div class="card-image">
 										<picture>
@@ -418,8 +420,7 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="radio" name="cabine" id="cabine2" v-model="selectedMainProducts.cabine"
-									:value="productPrices.cabine.cabine2" />
+								<input type="radio" name="cabine" id="cabine2" @input = "addPrice('cabine2')" value = "cabine2" ref="cabine2" :data-price="productPrices.cabine.cabine2" />
 								<label class=" card" for="cabine2">
 									<div class="card-image">
 										<picture>
@@ -446,8 +447,9 @@
 						<h4 class="box__title">BASIC EQUIPMENT</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="radio" name="basic" id="basic1" v-model="selectedMainProducts.basic"
-									:value="productPrices.basic.basic1" />
+								<input type="radio" name="basic" id="basic1" @input = "addPrice('basic1')"
+								 value = "basic1" ref = "basic1"
+									:data-price="productPrices.basic.basic1" />
 								<label class=" no-image card" for="basic1">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -461,8 +463,10 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="radio" name="basic" id="basic2" v-model="selectedMainProducts.basic"
-									:value="productPrices.basic.basic2" />
+								<input type="radio" name="basic" id="basic2" 
+								@input = "addPrice('basic2')"
+								value = "basic2" ref = "basic2"
+									:data-price="productPrices.basic.basic2" />
 								<label class=" no-image card" for="basic2">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -484,8 +488,9 @@
 						<h4 class="box__title">AvionicS</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="radio" name="avionics" id="avionics1"
-									v-model="selectedMainProducts.avionics" :value="productPrices.avionics.avionics1" />
+								<input type="radio" name="avionics" id="avionics1" @input = "addPrice('avionics1')"
+									 :data-price="productPrices.avionics.avionics1"
+									value = "avionics1" ref = "avionics1"									/>
 								<label class="card" for="avionics1">
 									<div class="card-image">
 										<picture>
@@ -548,8 +553,8 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="radio" name="avionics" id="avionics2"
-									v-model="selectedMainProducts.avionics" :value="productPrices.avionics.avionics2" />
+								<input type="radio" name="avionics" id="avionics2" @input = "addPrice('avionics2')"
+									value = "avionics2" ref = "avionics2" :data-price="productPrices.avionics.avionics2" />
 								<label class="card" for="avionics2">
 									<div class="card-image">
 										<picture>
@@ -621,8 +626,10 @@
 						<h4 class="box__title">front seat</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="checkbox" name="fseat" id="fseat1" v-model="selectedOptionalProducts"
-									:value="productPrices.fseat.fseat1" />
+								<input type="checkbox" name="fseat" id="fseat1" 
+								@input = "addPrice('fseat1')" 
+								value = "fseat1" ref = "fseat1"	
+									:data-price="productPrices.fseat.fseat1" />
 								<label class=" no-image card" for="fseat1">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -638,8 +645,9 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="checkbox" name="fseat" id="fseat2" v-model="selectedOptionalProducts"
-									:value="productPrices.fseat.fseat2" />
+								<input type="checkbox" name="fseat" id="fseat2" 
+								@input = "addPrice('fseat2')" value = "fseat2" ref = "fseat2"	
+									:data-price="productPrices.fseat.fseat2" />
 								<label class=" no-image card" for="fseat2">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -655,8 +663,9 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="checkbox" name="fseat" id="fseat3" v-model="selectedOptionalProducts"
-									:value="productPrices.fseat.fseat3" />
+								<input type="checkbox" name="fseat" id="fseat3" 
+								@input = "addPrice('fseat3')" value = "fseat3" ref = "fseat3" 
+									:data-price="productPrices.fseat.fseat3" />
 								<label class=" no-image card" for="fseat3">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -677,8 +686,9 @@
 						<h4 class="box__title">back seat</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="radio" name="bseat" id="bseat1" v-model="selectedMainProducts.bseat"
-									:value="productPrices.bseat.bseat1" />
+								<input type="checkbox" name="bseat" id="bseat1" 
+								@input = "addPrice('bseat1')" value = "bseat1" ref = "bseat1" 
+									:data-price="productPrices.bseat.bseat1" />
 								<label class=" card" for="bseat1">
 									<div class="card-image">
 										<picture>
@@ -699,8 +709,9 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="radio" name="bseat" id="bseat-2" v-model="selectedMainProducts.bseat"
-									:value="productPrices.bseat.bseat2" />
+								<input type="checkbox" name="bseat" id="bseat-2" 
+									@input = "addPrice('bseat2')" value = "bseat2" ref = "bseat2"
+									:data-price="productPrices.bseat.bseat2" />
 								<label class=" card" for="bseat-2">
 									<div class="card-image">
 										<picture>
@@ -720,8 +731,9 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="radio" name="bseat" id="bseat-3" v-model="selectedMainProducts.bseat"
-									:value="productPrices.bseat.bseat3" />
+								<input type="checkbox" name="bseat" id="bseat-3" 
+									@input = "addPrice('bseat3')" value = "bseat3" ref = "bseat3"
+									:data-price="productPrices.bseat.bseat3" />
 								<label class=" card" for="bseat-3">
 									<div class="card-image">
 										<picture>
@@ -748,7 +760,8 @@
 						<div class="row row-box">
 							<div class="col col-33">
 								<input type="checkbox" name="autopilot" id="autopilot1"
-									v-model="selectedOptionalProducts" :value="productPrices.autopilot.autopilot1" />
+									@input = "addPrice('autopilot1')" value = "autopilot1" ref = "autopilot1"
+									:data-price="productPrices.autopilot.autopilot1" />
 								<label class="no-image card" for="autopilot1">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -764,7 +777,8 @@
 							</div>
 							<div class="col col-33">
 								<input type="checkbox" name="autopilot" id="autopilot2"
-									v-model="selectedOptionalProducts" :value="productPrices.autopilot.autopilot2" />
+									@input = "addPrice('autopilot2')" value = "autopilot2" ref = "autopilot2"
+									:data-price="productPrices.autopilot.autopilot2" />
 								<label class="no-image card" for="autopilot2">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -780,7 +794,8 @@
 							</div>
 							<div class="col col-33">
 								<input type="checkbox" name="autopilot" id="autopilot3"
-									v-model="selectedOptionalProducts" :value="productPrices.autopilot.autopilot3" />
+									@input = "addPrice('autopilot3')" value = "autopilot3" ref = "autopilot3"
+									:data-price="productPrices.autopilot.autopilot3" />
 								<label class="no-image card" for="autopilot3">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -799,7 +814,8 @@
 						<div class="row">
 							<div class="col col-33">
 								<input type="checkbox" name="autopilot" id="autopilot4"
-									v-model="selectedOptionalProducts" :value="productPrices.autopilot.autopilot4" />
+									@input = "addPrice('autopilot4')" value = "autopilot4" ref = "autopilot4"
+									:data-price="productPrices.autopilot.autopilot4" />
 								<label class=" no-image card" for="autopilot4">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -815,7 +831,8 @@
 							</div>
 							<div class="col col-33">
 								<input type="checkbox" name="autopilot" id="autopilot5"
-									v-model="selectedOptionalProducts" :value="productPrices.autopilot.autopilot5" />
+									@input = "addPrice('autopilot5')" value = "autopilot5" ref = "autopilot5"
+									:data-price="productPrices.autopilot.autopilot5" />
 								<label class=" no-image card" for="autopilot5">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -837,8 +854,8 @@
 						<div class="row">
 							<div class="col col-33">
 								<input type="radio" name="parachute" id="parachute1"
-									v-model="selectedMainProducts.parachute"
-									:value="productPrices.parachute.parachute1" />
+									@input = "addPrice('parachute1')" value = "parachute1" ref = "parachute1"
+									:data-price="productPrices.parachute.parachute1" />
 								<label class="no-image card" for="parachute1">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -856,8 +873,8 @@
 							</div>
 							<div class="col col-33">
 								<input type="radio" name="parachute" id="parachute2"
-									v-model="selectedMainProducts.parachute"
-									:value="productPrices.parachute.parachute2" />
+									@input = "addPrice('parachute2')" value = "parachute2" ref = "parachute2"
+									:data-price="productPrices.parachute.parachute2" />
 								<label class=" no-image card" for="parachute2">
 									<div class="card-image">
 										<span class="card-check"><span class="icon icon-tick"></span></span>
@@ -879,8 +896,9 @@
 						<h4 class="box__title">fuel tanks</h4>
 						<div class="row">
 							<div class="col col-33">
-								<input type="radio" name="tanks" id="tank1" v-model="selectedMainProducts.tanks"
-									:value="productPrices.tanks.tank1" />
+								<input type="radio" name="tanks" id="tank1" 
+									@input = "addPrice('tank1')" value = "tank1" ref = "tank1"
+									:data-price="productPrices.tanks.tank1" />
 								<label class="card" for="tank1">
 									<div class="card-image">
 										<picture>
@@ -904,8 +922,9 @@
 								</label>
 							</div>
 							<div class="col col-33">
-								<input type="radio" name="tanks" id="tank2" v-model="selectedMainProducts.tanks"
-									:value="productPrices.tanks.tank2" />
+								<input type="radio" name="tanks" id="tank2" 
+								@input = "addPrice('tank2')" value = "tank2" ref = "tank2"
+									:data-price="productPrices.tanks.tank2" />
 								<label class=" card" for="tank2">
 									<div class="card-image">
 										<picture>
