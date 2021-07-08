@@ -84,6 +84,14 @@ ul {
   padding: 0;
 }
 
+
+hr {
+	height: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 16px;
+}
+
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #000;
@@ -196,6 +204,32 @@ ul {
   display: none;
 }
 
+.button {
+	background-color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 32px;
+	 padding: 20px 50px;
+  color: #001E74;
+  padding: 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #001E74;
+  border-radius: 129px;
+  width: 229px;
+  height: 64px;
+  -webkit-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
 .container {
   max-width: 1260px;
   padding: 0 10px;
@@ -252,18 +286,9 @@ display:flex;
   margin-left: -15px;
 }
 
-.menu__item.menu__item--contacts a {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	width: 180px;
-	height: 48px;
-	border-radius: 274px;
-	background-color: #fff;
-	color: #151515;
-}
 
-.menu__item a:hover {
+
+.menu__link:hover {
   color: #EF6638;
   border-bottom: 3px solid #EF6638;
 }
@@ -272,21 +297,41 @@ display:flex;
   text-transform: uppercase;
   font-weight: 600;
   line-height: 20px;
-  -webkit-transition: color .2s linear, background-color .2s linear;
-  -o-transition: color .2s linear, background-color .2s linear;
-  transition: color .2s linear, background-color .2s linear;
+  -webkit-transition: color .3s linear, background-color .3s linear;
+  -o-transition: color .3s linear, background-color .3s linear;
+  transition: color .3s linear, background-color .3s linear;
   padding-bottom: 15px;
 }
 
-.menu__item.menu__item--contacts a:hover {
+.button-header {
+	color: #151515;
+	background-color: #fff;
+	width: 180px;
+	height: 48px;
+	border-radius:274px;
+	border: none;
+	 -webkit-transition: color .3s linear, background-color .3s linear;
+  -o-transition: color .3s linear, background-color .3s linear;
+  transition: color .3s linear, background-color .3s linear;
+	
+}
+
+
+.button-header:hover {
 	background-color: #EF6638;
 	color: #fff;
 }
 
-.menu__item.menu__item--contacts a:hover {
-  color: #fff;
-  background-color: #EF6638;
-  border: none;
+
+
+.button-primary {
+	color: #fff;
+	background-color: #001E74; 
+	margin-bottom: 28px;
+}
+
+.button:hover {
+	opacity: 0.8;
 }
 
 .header__title {
@@ -398,20 +443,6 @@ display:flex;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.sidebar__btn-group a:hover {
-  background-color: #001E74;
-  color: #fff;
-}
-
-hr {
-	height: 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	margin-bottom: 16px;
-}
-
-.sidebar__btn-group a:first-child {
-  margin-bottom: 28px;
-}
 
 .options {
   width: 924px;
@@ -688,7 +719,7 @@ hr {
 }
 
  .social{
-	transition: all .2s linear;
+	transition: all .3s linear;
 }
 
 
@@ -720,9 +751,9 @@ hr {
 	  text-transform: uppercase;
   font-weight: 600;
   line-height: 20px;
-  -webkit-transition: color .2s linear, background-color .2s linear;
-  -o-transition: color .2s linear, background-color .2s linear;
-  transition: color .2s linear, background-color .2s linear;
+  -webkit-transition: color .3s linear, background-color .3s linear;
+  -o-transition: color .3s linear, background-color .3s linear;
+  transition: color .3s linear, background-color .3s linear;
   padding-bottom: 15px;
 }
 
