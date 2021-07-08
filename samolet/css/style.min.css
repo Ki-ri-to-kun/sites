@@ -628,13 +628,9 @@ hr {
   border: 1px solid #30B686;
 }
 
-.card-image {height: 0; position: relative; padding-top: 70%;} 
+.card-image {height: 0; position: relative; padding-top: 70%; margin-bottom: 28px;} 
 .card-image img {position: absolute; top: 0; left: 0; right: 0; bottom: 0; object-fit: cover;}
 
-/*
-.card-image img {
-	width: 100%;
-}*/
 
 .card-check {
 	display: inline-block;
