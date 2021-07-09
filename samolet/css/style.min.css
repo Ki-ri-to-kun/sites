@@ -666,7 +666,7 @@ display:flex;
 
 .radio-horizontal {
 	display: inline-block;
-	min-width: 5rem;
+	min-width: 4rem;
 	margin-right: 1rem;
 	}
 
