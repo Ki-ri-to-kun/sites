@@ -513,7 +513,7 @@ display:flex;
 
 
 .options {
-  width: 924px;
+  width: 73.33%; /*924px;*/
   margin-bottom: 243px;
 }
 
@@ -923,6 +923,9 @@ to {
 	  display: none;
   }
   .sidebar__info {margin-bottom: 0}
+  .options {
+	  width : 100%;
+  }
 }
 
 @media (max-width: 1140px) {
