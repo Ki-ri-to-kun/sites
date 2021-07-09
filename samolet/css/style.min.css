@@ -514,7 +514,7 @@ display:flex;
 
 
 .options {
-  width: 73.33%; /*924px;*/
+  width: 97%; /* 73.33 - 924px;*/
   margin-bottom: 243px;
 }
 
@@ -666,8 +666,8 @@ display:flex;
 
 .radio-horizontal {
 	display: inline-block;
-	min-width: 4rem;
-	margin-right: 0.9rem;
+	min-width: 5rem;
+	margin-right: 1rem;
 	}
 
 
