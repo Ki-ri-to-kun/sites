@@ -113,7 +113,7 @@ hr {
 }
 
 .row {
-  margin: 0 -10px;
+  /*margin: 0 -10px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,10 +1075,6 @@ to {
 	.footer__links {
 		margin-top: 25px;
 		margin-left: -48px;
-	}
-	
-	.row {
-		margin: 0 10px;
 	}
 	
 }
