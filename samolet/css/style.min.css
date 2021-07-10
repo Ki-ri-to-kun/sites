@@ -935,6 +935,10 @@ to {
 	.header {
 		width: 50%;
 	}
+	
+	.header-container {
+		justify-content: flex-start;
+	}
     .header__title {
 	  font-size: 64px;
 	  padding-right: 10px;
