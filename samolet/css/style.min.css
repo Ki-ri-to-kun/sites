@@ -806,7 +806,6 @@ display:flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 220px;
 }
 
 .footer-menu__item {
@@ -870,6 +869,10 @@ to {
 
 @media (max-width: 1250px) {
   .col-mobile-50 {width: 50%; flex: 0 0 50%;}
+   /*footer*/
+  .col-mobile-100 {width: 100%; flex: 0 0 100%;}
+  .footer__links {text-align: center; margin-bottom: 25px;}
+  .footer__logo {margin-bottom: 25px;}
 }
 
 @media (max-width: 1185px) {
@@ -929,6 +932,7 @@ to {
   .menu__list {
 	  justify-self: flex-end;
   }
+  
 }
 
 @media (max-width: 1024px) {
