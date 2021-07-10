@@ -1048,7 +1048,31 @@ to {
 	  margin-right: 0;
 	  padding: 7px 0;
   }
-
+  
+  /*footer*/
+	.footer__logo, .footer__text, .footer-menu__item {
+		text-align: center;
+		padding: 0 10px;
+	}
+	
+	.footer-menu__list {
+		align-items: center;
+	}
+	
+	.footer-menu__item {
+		flex-basis: 100%;
+		margin: 0;
+	}
+	
+	.col {
+		margin: 0;
+	}
+	
+	.footer__links {
+		margin-top: 25px;
+		margin-left: -48px;
+	}
+	
 }
 
 
