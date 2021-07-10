@@ -1073,6 +1073,10 @@ to {
 		margin-left: -48px;
 	}
 	
+	.row {
+		margin: 0 10px;
+	}
+	
 }
 
 
