@@ -873,9 +873,7 @@ to {
 }
 
 @media (max-width: 1185px) {
-	.header-container {
-		justify-content: flex-start;
-	}
+
 	.header__title {
 		width: 100%;
 		margin-top: 50px;
@@ -919,9 +917,7 @@ to {
 	  align-items: flex-start;
 	  
   }
-  .sidebar__btn-group {
-	  margin-right: 8rem;
-  }
+ 
   
   hr {
 	  display: none;
@@ -935,7 +931,7 @@ to {
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1024px) {
 	.header {
 		width: 50%;
 	}
