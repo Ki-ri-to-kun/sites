@@ -113,7 +113,7 @@ hr {
 }
 
 .row {
-  /*margin: 0 -10px;*/
+  margin: 0 -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@ hr {
 
 .container {
   max-width: 1260px;
-  padding: 0 10px;
+  padding: 0 15px;
   margin: 0 auto;
   position: relative;
 }
@@ -741,7 +741,8 @@ display:flex;
 
 .footer-container {
   display: block;
-  padding: 80px 0 45px;
+  padding-top: 80px;
+  padding-bottom: 45px;
 }
 
 .footer__text {
@@ -993,6 +994,10 @@ to {
   .options {
 	  margin-bottom: 100px;
   }
+  .footer-container {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
 }
 
 @media (max-width: 767px) {
