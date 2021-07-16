@@ -96,6 +96,10 @@ ul {
   margin: 0;
 }
 
+input {
+  padding: 0;
+}
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8E969F;
@@ -140,13 +144,13 @@ ul {
 }*/
 
 .icon {
-  background: url("../img/Icons.svg") 30px 30px no-repeat;
+  background: url("../img/icons.svg") 30px 30px no-repeat;
   width: 30px;
   height: 30px;
   display: inline-block;
   position: relative;
-  top: 11px;
-  margin-right: 10px;
+  top: 10px;
+  margin-right: 8px;
   --bg-position: 30px 30px;
   background-position: var(--bg-position);
   /*
@@ -159,10 +163,12 @@ ul {
 
 .icon-cart {
   --bg-position: -180px -100px;
+  margin-right: 18px;
 }
 
 .icon-bell {
   --bg-position: -180px -220px;
+  margin-right: 0;
 }
 
 .icon-heart {
@@ -171,11 +177,12 @@ ul {
 
 .icon-location {
   --bg-position: -100px -180px;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .icon-search {
   --bg-position: -260px -220px;
+  margin-right: 6px;
 }
 
 .container {
@@ -215,31 +222,40 @@ ul {
           align-items: center;
 }
 
+.search__input {
+  width: 280px;
+}
+
 .search__city {
   cursor: pointer;
 }
 
 .button {
-	cursor: pointer;
-	border: 1px solid #3CA5F1;
-	border-radius: 10px;
-	display: inline-block;
-	line-height: 30px;
-	font-weight: 700;
-	color: #fff;
+  cursor: pointer;
+  border: 1px solid #3CA5F1;
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .button-primary {
-	background-color: #3CA5F1;
-	font-size: 19px;
-	padding-left: 32.5px;
-	padding-right: 32.5px;
+  background-color: #3CA5F1;
+  font-size: 19px;
+  padding-left: 32.5px;
+  padding-right: 32.5px;
+  margin-left: 64px;
 }
 
 .button-secondary {
-	font-weight: 700;
-	color: #3CA5F1;
-	
+  font-weight: 700;
+  color: #3CA5F1;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-left: 32px;
 }
 
 /*
