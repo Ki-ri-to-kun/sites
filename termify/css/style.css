@@ -220,29 +220,26 @@ ul {
 }
 
 .button {
-  cursor: pointer;
-  width: 95px;
-  height: 48px;
-  border: 1px solid #3CA5F1;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+	cursor: pointer;
+	border: 1px solid #3CA5F1;
+	border-radius: 10px;
+	display: inline-block;
+	line-height: 30px;
+	font-weight: 700;
+	color: #fff;
 }
 
 .button-primary {
-  background-color: #3CA5F1;
+	background-color: #3CA5F1;
+	font-size: 19px;
+	padding-left: 32.5px;
+	padding-right: 32.5px;
 }
 
 .button-secondary {
-  font-weight: 700;
-  color: #3CA5F1;
+	font-weight: 700;
+	color: #3CA5F1;
+	
 }
 
 /*
