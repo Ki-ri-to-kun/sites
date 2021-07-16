@@ -2,7 +2,7 @@
 
 body,
 html {
-  font-family: Verdana;
+  font-family: "Mukta Vaani";
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ input,
 select,
 textarea {
   font-size: 1rem;
-  font-family: Verdana;
+  font-family: "Mukta Vaani";
   margin: 0;
   border: 0;
   outline: 0;
@@ -100,6 +100,12 @@ input {
   padding: 0;
 }
 
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8E969F;
@@ -144,7 +150,7 @@ input {
 }*/
 
 .icon {
-  background: url("../img/Icons.svg") 30px 30px no-repeat;
+  background: url("../img/icons.svg") 30px 30px no-repeat;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -177,7 +183,8 @@ input {
 
 .icon-location {
   --bg-position: -100px -180px;
-  margin-left: 50px;
+  margin-left: 0px;
+  margin-right: 0;
 }
 
 .icon-search {
@@ -228,6 +235,9 @@ input {
 
 .search__city {
   cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  margin-left: 60px;
 }
 
 .button {
@@ -256,6 +266,12 @@ input {
   padding-left: 18px;
   padding-right: 18px;
   margin-left: 32px;
+}
+
+.header__line {
+  border: 0;
+  border-bottom: 1px solid #D9DBDD;
+  margin-top: 21px;
 }
 
 /*
