@@ -41,37 +41,6 @@ h6 {
   margin: 0;
 }
 
-@font-face {
-  font-family: "Gilroy-Bold";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Medium";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Regular";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Semibold";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
 
 html {
   -webkit-box-sizing: border-box;
@@ -109,21 +78,25 @@ button {
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8E969F;
+   padding-left: 30px;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #8E969F;
+   padding-left: 30px;
 }
 
 :-ms-input-placeholder {
   /* IE 10+ */
   color: #8E969F;
+   padding-left: 30px;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: #8E969F;
+   padding-left: 30px;
 }
 
 /*
@@ -192,6 +165,18 @@ button {
   margin-right: 6px;
 }
 
+.icon-mask {
+   		/*-webkit-mask: url("../img/Icons.svg") -260px -220px no-repeat;
+          mask: url("../img/Icons.svg") -260px -220px no-repeat;
+  -webkit-mask-position: var(--bg-position);
+          mask-position: var(--bg-position);
+  background: #A1B3C5;*/
+	}
+	
+	.active.icon {
+		/*background: gray;*/
+	}
+
 .container {
   max-width: 1210px;
   padding: 0 10px;
@@ -230,14 +215,19 @@ button {
 }
 
 .search__input {
-  width: 280px;
+	width: 280px;
+}
+
+.search__input.bg-image {
+	background: url(../img/search.svg) no-repeat;
+	background-position: -5px -2px;
 }
 
 .search__city {
-  cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
-  margin-left: 60px;
+	cursor: pointer;
+	font-size: inherit;
+	font-family: inherit;
+	margin-left: 60px;
 }
 
 .button {

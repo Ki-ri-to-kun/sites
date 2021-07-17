@@ -17,6 +17,14 @@ document.querySelector('body').classList.add('no-webp');
 }
 });
 
+var searchInput = document.querySelector('.search__input');
+searchInput.addEventListener('input', function(event){
+	this.classList.add('bg-image');
+	if (event.target.value !== ''){
+		this.classList.remove('bg-image');
+	}
+	
+});
 /*
 new Vue({
 	el: '',
