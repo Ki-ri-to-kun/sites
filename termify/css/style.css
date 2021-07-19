@@ -163,8 +163,8 @@ button {
 
 .icon-search {
   --bg-position: -260px -220px;
-  margin-right: 6px;
   opacity: 0.5;
+  top: 0;
 }
 
 .icon-mask {
@@ -222,6 +222,7 @@ button {
 
 .search__input:focus {
 	opacity: 1;
+	top: 0;
 }
 
 .search__input.bg-image {
