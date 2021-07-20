@@ -41,6 +41,37 @@ h6 {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 html {
   -webkit-box-sizing: border-box;
@@ -74,7 +105,6 @@ button {
   border: none;
   padding: 0;
 }
-
 
 .search__input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -124,7 +154,7 @@ button {
 }*/
 
 .icon {
-  background: url("../img/Icons.svg") 30px 30px no-repeat;
+  background: url("../img/icons.svg") 30px 30px no-repeat;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -135,9 +165,9 @@ button {
   background-position: var(--bg-position);
   /*
 	&-mask {
-   		mask: url('../img/icons.svg') 24px 24px no-repeat;
+		mask: url('../img/icons.svg');
 		mask-position: var(--bg-position);
-		background: $gray;
+		background: black;
 	}*/
 }
 
@@ -164,20 +194,21 @@ button {
 .icon-search {
   --bg-position: -260px -220px;
   opacity: 0.5;
-  top: 0;
 }
 
-.icon-mask {
-   		/*-webkit-mask: url("../img/Icons.svg") -260px -220px no-repeat;
-          mask: url("../img/Icons.svg") -260px -220px no-repeat;
-  -webkit-mask-position: var(--bg-position);
-          mask-position: var(--bg-position);
-  background: #A1B3C5;*/
-	}
-	
-	.active.icon {
-		/*background: gray;*/
-	}
+.icon-offers {
+  --bg-position: -220px -220px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  margin-right: 0;
+}
+
+.icon-more {
+  --bg-position: -100px -20px;
+  top: -3px;
+  margin-right: 0;
+}
 
 .container {
   max-width: 1210px;
@@ -217,24 +248,23 @@ button {
 }
 
 .search__input {
-	width: 280px;
+  width: 280px;
 }
 
 .search__input:focus {
-	opacity: 1;
-	top: 0;
+  opacity: 1;
 }
 
 .search__input.bg-image {
-	background: url(../img/search.svg) no-repeat;
-	background-position: -5px -2px;
+  background: url(../img/search.svg) no-repeat;
+  background-position: -5px -2px;
 }
 
 .search__city {
-	cursor: pointer;
-	font-size: inherit;
-	font-family: inherit;
-	margin-left: 60px;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  margin-left: 60px;
 }
 
 .button {
@@ -269,6 +299,40 @@ button {
   border: 0;
   border-bottom: 1px solid #D9DBDD;
   margin-top: 21px;
+  margin-bottom: 10px;
+}
+
+.menu-top {
+  margin-top: 164px;
+}
+
+.menu-top__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-top__item {
+  position: relative;
+  height: 30px;
+  padding: 10px 20px;
+}
+
+.menu-top__item:first-child {
+  padding-left: 35px;
+}
+
+.menu-top__item:last-child {
+  padding-right: 0;
+}
+
+.menu-top__item + .menu-top__item {
+  margin-left: 12px;
+}
+
+.menu-top__link {
+  color: #000;
+  display: inline-block;
 }
 
 /*
@@ -289,6 +353,11 @@ to {
 	transform: translateX(-100%);
 	}
 } */
+
+/* <svg  fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M281.98 242.73L277.5 238.25" stroke="#8E969F" stroke-width="2" stroke-linecap="round"/>
+<circle cx="273" cy="233" r="6" stroke="#8E969F" stroke-width="2"/>
+</svg>*/
 
 @media (max-width: 992px) {
   body,
