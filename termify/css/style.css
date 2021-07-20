@@ -198,16 +198,16 @@ button {
 
 .icon-offers {
   --bg-position: -220px -220px;
-  position: absolute;
-  top: 8px;
-  left: 0;
   margin-right: 0;
+  top: -3px;
+  vertical-align: top;
 }
 
 .icon-more {
   --bg-position: -100px -20px;
   top: -3px;
   margin-right: 0;
+  vertical-align: top;
 }
 
 .container {
@@ -253,11 +253,6 @@ button {
 
 .search__input:focus {
   opacity: 1;
-}
-
-.search__input.bg-image {
-  background: url(../img/search.svg) no-repeat;
-  background-position: -5px -2px;
 }
 
 .search__city {
@@ -314,11 +309,12 @@ button {
 
 .menu-top__item {
   position: relative;
+  display: inline-block;
   padding: 10px 20px;
 }
 
-.menu-top__item:first-child {
-  padding-left: 35px;
+.menu-top__item:first-child a {
+  width: 120px;
 }
 
 .menu-top__item:last-child {
@@ -332,6 +328,7 @@ button {
 .menu-top__link {
   color: #000;
   display: inline-block;
+  line-height: 30px;
 }
 
 /*
