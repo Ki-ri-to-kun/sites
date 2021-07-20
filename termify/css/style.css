@@ -194,6 +194,7 @@ button {
 .icon-search {
   --bg-position: -260px -220px;
   opacity: 0.5;
+  vertical-align: top;
 }
 
 .icon-offers {
