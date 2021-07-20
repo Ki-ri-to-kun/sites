@@ -250,6 +250,7 @@ button {
 
 .search__input {
   width: 280px;
+  vertical-align: top;
 }
 
 .search__input:focus {
