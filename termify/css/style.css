@@ -192,16 +192,10 @@ button {
 
 .icon-offers {
   --bg-position: -220px -220px;
-  margin-right: 0;
-  top: -3px;
-  vertical-align: top;
 }
 
 .icon-more {
   --bg-position: -100px -20px;
-  top: -3px;
-  margin-right: 0;
-  vertical-align: top;
 }
 
 .search-icon {
@@ -261,11 +255,6 @@ button {
   opacity: 1;
 }
 
-.search__input.bg-image {
-  background: url(../img/search.svg) no-repeat;
-  background-position: -5px -2px;
-}
-
 .search__city {
   cursor: pointer;
   font-size: inherit;
@@ -313,23 +302,16 @@ button {
 }
 
 .menu-top__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  padding-right: 42px;
+  height: 50px;
+  overflow: hidden;
 }
 
 .menu-top__item {
-  position: relative;
   display: inline-block;
+  vertical-align: top;
   padding: 10px 20px;
-}
-
-.menu-top__item:first-child a {
-  width: 120px;
-}
-
-.menu-top__item:last-child {
-  padding-right: 0;
 }
 
 .menu-top__item + .menu-top__item {
@@ -338,8 +320,13 @@ button {
 
 .menu-top__link {
   color: #000;
-  display: inline-block;
   line-height: 30px;
+}
+
+.more-icon {
+  position: absolute;
+  top: 8px;
+  right: 0;
 }
 
 .page {
