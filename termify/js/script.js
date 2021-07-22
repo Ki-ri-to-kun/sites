@@ -18,12 +18,12 @@ document.querySelector('body').classList.add('no-webp');
 });
 
 var searchInput = document.querySelector('.search__input');
-searchInput.addEventListener('input', function(event){
-	this.classList.add('icon-search');
-	if (event.target.value !== ''){
-		this.classList.remove('icon-search');
-	}
-	
+var searchIcon = document.querySelector('.icon-search');
+searchInput.addEventListener('focus', function(event){
+	searchIcon.style.opacity = 1;
+});
+searchInput.addEventListener('blur', function(event){
+	searchIcon.style.opacity = .5;
 });
 /*
 new Vue({
