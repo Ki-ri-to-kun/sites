@@ -299,6 +299,7 @@ button {
 
 .menu-top {
   margin-top: 36px;
+  margin-bottom: 36px;
 }
 
 .menu-top__list {
@@ -331,6 +332,39 @@ button {
 
 .page {
   padding-top: 150px;
+}
+
+.slider-main {
+  margin-bottom: 49px;
+}
+
+.slider-main__slider {
+  width: 66.1%;
+  margin-left: 20px;
+}
+
+.slider-main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-main__box {
+  width: 32.2%;
+  padding: 48px 9px 48px 48px;
+}
+
+.slider-main__box-title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  letter-spacing: -0.59px;
+  margin-bottom: 48px;
+}
+
+.slider-main__box-text {
+  font-size: 19px;
+  line-height: 22px;
 }
 
 /*

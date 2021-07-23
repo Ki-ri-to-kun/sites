@@ -25,6 +25,10 @@ searchInput.addEventListener('focus', function(event){
 searchInput.addEventListener('blur', function(event){
 	searchIcon.style.opacity = .5;
 });
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '.splide' ).mount();
+} );
 /*
 new Vue({
 	el: '',
