@@ -182,12 +182,6 @@ button {
   vertical-align: middle;
   --bg-position: 30px 30px;
   background-position: var(--bg-position);
-  /*
-	&-mask {
-		mask: url('../img/icons.svg');
-		mask-position: var(--bg-position);
-		background: black;
-	}*/
 }
 
 .icon-cart {
@@ -221,6 +215,18 @@ button {
 
 .icon-more {
   --bg-position: -100px -20px;
+}
+
+.icon-star {
+  --bg-position: -300px -140px;
+}
+
+.icon-mask {
+  -webkit-mask: url("../img/Icons.svg");
+          mask: url("../img/Icons.svg");
+  -webkit-mask-position: var(--bg-position);
+          mask-position: var(--bg-position);
+  background: #8E969F;
 }
 
 .search-icon {
@@ -407,12 +413,20 @@ button {
 
 .card {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .card__image {
   position: relative;
   height: 0;
   padding-top: 58.21%;
+  margin-bottom: 8px;
 }
 
 .card__image img {
@@ -425,6 +439,27 @@ button {
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+.card__address,
+.card__star {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.07px;
+  margin-bottom: 4px;
+}
+
+.card__star {
+  color: #8E969F;
+  margin-top: auto;
 }
 
 /*
