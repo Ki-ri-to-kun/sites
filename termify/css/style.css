@@ -288,8 +288,6 @@ button {
 
 .search__city {
   cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
   margin-left: 60px;
 }
 
