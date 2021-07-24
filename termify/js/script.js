@@ -33,6 +33,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
 			type   : 'loop',
 			perPage: 4,
 			perMove: 1,
+			gap: 20,
+			pagination: false
 	}).mount();
 } );
 

@@ -405,6 +405,28 @@ button {
   line-height: 30px;
 }
 
+.card {
+  cursor: pointer;
+}
+
+.card__image {
+  position: relative;
+  height: 0;
+  padding-top: 58.21%;
+}
+
+.card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 /*
 @keyframes slideInSide {
 from {
