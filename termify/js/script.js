@@ -28,7 +28,14 @@ searchInput.addEventListener('blur', function(event){
 
 document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '.splide' ).mount();
+
+	new Splide( '.recent .splide', {
+			type   : 'loop',
+			perPage: 4,
+			perMove: 1,
+	}).mount();
 } );
+
 /*
 new Vue({
 	el: '',
