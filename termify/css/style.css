@@ -124,6 +124,7 @@ button {
   padding-left: 18px;
   padding-right: 18px;
   margin-left: 32px;
+  border-radius: 10px;
 }
 
 .search__input::-webkit-input-placeholder {
