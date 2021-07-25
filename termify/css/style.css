@@ -104,6 +104,28 @@ button {
   all: unset;
 }
 
+.button {
+  cursor: pointer;
+  border: 1px solid #3CA5F1;
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+}
+
+.button-primary {
+  background-color: #3CA5F1;
+  -webkit-box-shadow: 0px 5px 15px rgba(60, 165, 241, 0.3);
+          box-shadow: 0px 5px 15px rgba(60, 165, 241, 0.3);
+}
+
+.button-secondary {
+  font-weight: 700;
+  color: #3CA5F1;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-left: 32px;
+}
+
 .search__input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #8E969F;
@@ -219,6 +241,14 @@ button {
   --bg-position: -300px -140px;
 }
 
+.icon-favorite {
+  --bg-position: -100px -60px;
+}
+
+.icon-arrow-right {
+  --bg-position: -180px -20px;
+}
+
 .icon-mask {
   -webkit-mask: url("../img/Icons.svg");
           mask: url("../img/Icons.svg");
@@ -232,6 +262,18 @@ button {
   top: 11px;
   left: 0;
   pointer-events: none;
+}
+
+.favorite-icon {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  z-index: 1;
 }
 
 .container {
@@ -291,32 +333,15 @@ button {
   margin-left: 60px;
 }
 
-.button {
-  cursor: pointer;
-  border: 1px solid #3CA5F1;
+.search-button {
   border-radius: 10px;
-  display: inline-block;
   line-height: 30px;
-  font-weight: 700;
-  color: #fff;
   padding-top: 9px;
   padding-bottom: 9px;
-}
-
-.button-primary {
-  background-color: #3CA5F1;
   font-size: 19px;
   padding-left: 32.5px;
   padding-right: 32.5px;
   margin-left: 64px;
-}
-
-.button-secondary {
-  font-weight: 700;
-  color: #3CA5F1;
-  padding-left: 18px;
-  padding-right: 18px;
-  margin-left: 32px;
 }
 
 .header__line {
@@ -418,11 +443,39 @@ button {
           flex-flow: column;
 }
 
+.card:hover .card__title {
+  color: #3ca5f1;
+}
+
+.card:hover .card__image .icon,
+.card:hover .card__image::before,
+.card:hover .card__image .card-button {
+  visibility: visible;
+  opacity: 1;
+}
+
 .card__image {
   position: relative;
   height: 0;
   padding-top: 58.21%;
   margin-bottom: 8px;
+}
+
+.card__image::before {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .card__image img {
@@ -442,6 +495,10 @@ button {
   font-size: 19px;
   line-height: 26px;
   margin-bottom: 4px;
+  color: #000;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .card__address,
@@ -456,6 +513,45 @@ button {
 .card__star {
   color: #8E969F;
   margin-top: auto;
+}
+
+.card-button {
+  line-height: 24px;
+  padding: 3px 14px;
+  border-radius: 17px;
+  position: absolute;
+  bottom: 9px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.recent__slider {
+  position: relative;
+}
+
+.recent-gradient {
+  width: 183px;
+  height: 100%;
+  background: -o-linear-gradient(183.15deg, #FFFFFF 22.15%, rgba(255, 255, 255, 0) 97.19%);
+  background: linear-gradient(266.85deg, #FFFFFF 22.15%, rgba(255, 255, 255, 0) 97.19%);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.recent__slider .splide__arrow--prev {
+  display: none;
+}
+
+.recent__slider .splide__arrow--next {
+  background-color: transparent;
+  position: absolute;
+  top: 85px;
+  right: -10px;
 }
 
 /*

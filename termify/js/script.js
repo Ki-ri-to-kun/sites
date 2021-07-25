@@ -34,7 +34,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 			perPage: 4,
 			perMove: 1,
 			gap: 20,
-			pagination: false
+			pagination: false,
 	}).mount();
 } );
 
