@@ -277,7 +277,7 @@ button {
   position: absolute;
   top: 10px;
   right: 9px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .container {
@@ -485,13 +485,6 @@ button {
   color: #3ca5f1;
 }
 
-.card:hover .card__image .icon,
-.card:hover .card__image::before,
-.card:hover .card__image .card-button {
-  visibility: visible;
-  opacity: 1;
-}
-
 .card__image {
   position: relative;
   height: 0;
@@ -546,6 +539,7 @@ button {
   line-height: 18px;
   letter-spacing: 0.07px;
   margin-bottom: 4px;
+  color: #000;
 }
 
 .card__star {
@@ -558,13 +552,20 @@ button {
   padding: 3px 14px;
   border-radius: 17px;
   position: absolute;
-  bottom: 9px;
+  top: 120px;
   right: 20px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+}
+
+.card__link:hover ~ .card-button,
+.card__link:hover ~ button .favorite-icon,
+.card__link:hover .card__image::before {
+  visibility: visible;
+  opacity: 1;
 }
 
 .recent__slider {
