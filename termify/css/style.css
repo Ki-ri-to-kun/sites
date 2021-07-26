@@ -444,6 +444,7 @@ button {
 .slider-main__box {
   width: 32.2%;
   padding: 48px 9px 48px 48px;
+  background: url("../img/slider-bg.svg") no-repeat;
 }
 
 .slider-main__box-title {
