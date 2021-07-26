@@ -280,6 +280,11 @@ button {
   z-index: 2;
 }
 
+.favorite-icon:hover, .card-button:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
 .container {
   max-width: 1210px;
   padding: 0 10px;
