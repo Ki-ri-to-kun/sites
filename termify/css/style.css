@@ -280,11 +280,6 @@ button {
   z-index: 2;
 }
 
-.favorite-icon:hover, .card-button:hover, .card__image:hover::before {
-	visibility: visible;
-	opacity: 1;
-}
-
 .container {
   max-width: 1210px;
   padding: 0 10px;
@@ -488,6 +483,13 @@ button {
 
 .card:hover .card__title {
   color: #3ca5f1;
+}
+
+.card:hover .card__image::before,
+.card:hover .favorite-icon,
+.card:hover .card-button {
+  visibility: visible;
+  opacity: 1;
 }
 
 .card__image {
