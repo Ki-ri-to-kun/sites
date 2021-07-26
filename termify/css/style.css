@@ -373,6 +373,7 @@ button {
   vertical-align: top;
   padding: 10px 20px;
   position: relative;
+  background: #f6f6f7;
 }
 
 .menu-top__item + .menu-top__item {
@@ -412,6 +413,12 @@ button {
   width: 100%;
   left: 0;
 }
+
+.special {
+	background: rgba(60, 165, 241, 0.2);
+	border-radius: 12px;
+}
+
 
 .more {
   position: static;
