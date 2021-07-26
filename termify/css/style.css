@@ -280,7 +280,7 @@ button {
   z-index: 2;
 }
 
-.favorite-icon:hover, .card-button:hover {
+.favorite-icon:hover, .card-button:hover, .card__image:hover::before {
 	visibility: visible;
 	opacity: 1;
 }
