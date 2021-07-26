@@ -326,6 +326,7 @@ button {
 .search__input {
   width: 280px;
   padding-left: 30px;
+  background: #F6F6F7;
 }
 
 .search__input:focus {
