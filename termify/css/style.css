@@ -435,18 +435,10 @@ button {
 }
 
 .slider-main__slider {
-  width: 66.1%;
   margin-left: 20px;
 }
 
-.slider-main__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .slider-main__box {
-  width: 32.2%;
   padding: 48px;
   background: url("../img/slider-bg.svg") no-repeat;
 }
@@ -485,10 +477,6 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-}
-
-.near .card {
-	 margin-bottom: 48px;
 }
 
 .card:hover .card__title {
@@ -605,6 +593,10 @@ button {
 
 .near {
   margin-bottom: 60px;
+}
+
+.near .card {
+  margin-bottom: 48px;
 }
 
 /*
