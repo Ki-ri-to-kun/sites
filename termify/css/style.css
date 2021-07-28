@@ -553,6 +553,7 @@ button {
 .card__star {
   color: #8E969F;
   margin-top: auto;
+  margin-bottom: 0;
 }
 
 .card-button {
