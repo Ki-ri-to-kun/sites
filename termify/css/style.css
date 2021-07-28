@@ -607,7 +607,7 @@ button {
   margin-bottom: 60px;
 }
 
-.near .card {
+.near .row:not(:last-child) .card {
   margin-bottom: 48px;
 }
 
