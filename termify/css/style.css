@@ -292,7 +292,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
   background-color: #fff;
 }
 
@@ -465,10 +465,10 @@ button {
 }
 
 .recent {
-  margin-bottom: 48px;
+  margin-bottom: 47px;
 }
 
-.recent__title {
+.section__title {
   margin-bottom: 24px;
   font-weight: 700;
   font-size: 23px;
@@ -476,6 +476,7 @@ button {
 }
 
 .card {
+  position: relative;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,13 +574,6 @@ button {
   transition: all .3s;
 }
 
-.card__link:hover ~ .card-button,
-.card__link:hover ~ button .favorite-icon,
-.card__link:hover .card__image::before {
-  visibility: visible;
-  opacity: 1;
-}
-
 .recent__slider {
   position: relative;
 }
@@ -603,6 +597,10 @@ button {
   position: absolute;
   top: 85px;
   right: -10px;
+}
+
+.near {
+  margin-bottom: 60px;
 }
 
 /*
