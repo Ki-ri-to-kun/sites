@@ -487,6 +487,10 @@ button {
           flex-flow: column;
 }
 
+.near .card {
+	 margin-bottom: 48px;
+}
+
 .card:hover .card__title {
   color: #3ca5f1;
 }
