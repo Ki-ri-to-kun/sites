@@ -103,6 +103,7 @@ input {
 button {
   border: 0;
   background: transparent;
+  cursor: pointer;
 }
 
 .button {
@@ -477,6 +478,10 @@ button {
           flex-flow: column;
 }
 
+.card button {
+  z-index: 2;
+}
+
 .card:hover .card__title {
   color: #3ca5f1;
 }
@@ -555,13 +560,22 @@ button {
   padding: 3px 14px;
   border-radius: 17px;
   position: absolute;
-  top: 120px;
+  bottom: 9px;
   right: 20px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+}
+
+.card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .recent__slider {

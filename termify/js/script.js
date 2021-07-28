@@ -38,6 +38,14 @@ document.addEventListener( 'DOMContentLoaded', function () {
 	}).mount();
 } );
 
+var buttons = document.querySelectorAll('button');
+console.log(buttons);
+for (var i = 0; i <buttons.length; i++){
+	buttons[i].addEventListener('click', function(){
+		console.log('Кнопка нажата!');
+	});
+}
+
 /*
 new Vue({
 	el: '',
