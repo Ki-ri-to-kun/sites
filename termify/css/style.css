@@ -258,6 +258,22 @@ button {
   --bg-position: -140px -220px;
 }
 
+.icon-facebook {
+  --bg-position: -20px -220px;
+}
+
+.icon-instagram {
+  --bg-position: -60px -220px;
+}
+
+.icon-linkedin {
+  --bg-position: -100px -220px;
+}
+
+.icon-language {
+  --bg-position: -140px -180px;
+}
+
 .icon-mask {
   -webkit-mask: url("../img/Icons.svg");
           mask: url("../img/Icons.svg");
@@ -288,6 +304,11 @@ button {
   top: 10px;
   right: 9px;
   z-index: 2;
+}
+
+.offers-icon {
+  position: absolute;
+  left: -35px;
 }
 
 .header .info .icon {
@@ -628,6 +649,61 @@ button {
 .more-container__button {
   padding: 8px 135px;
   font-size: 19px;
+}
+
+.footer {
+  color: #8E969F;
+  border-top: 1px solid #D9DBDD;
+  padding-top: 48px;
+  padding-bottom: 46px;
+}
+
+.footer .social-link + .social-link {
+  margin-left: 12px;
+}
+
+.footer__title {
+  margin-bottom: 24px;
+}
+
+.footer-top {
+  margin-bottom: 58px;
+}
+
+.footer-menu__item {
+  margin-bottom: 8px;
+}
+
+.footer-menu__link {
+  color: inherit;
+}
+
+.footer-special {
+  position: relative;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.07px;
+}
+
+.footer-bottom button {
+  font-weight: 700;
+  letter-spacing: 0.07px;
+  font-size: inherit;
+  color: inherit;
+  margin-right: 48px;
+}
+
+.footer-bottom .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-bottom__copyright {
+  margin: 0;
 }
 
 /*
