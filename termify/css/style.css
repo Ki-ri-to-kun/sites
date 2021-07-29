@@ -310,10 +310,6 @@ button {
   left: -35px;
 }
 
-.bell-icon {
-  margin-left: 18px;
-}
-
 .info__link + .info__link {
   margin-left: 18px;
 }
@@ -807,6 +803,10 @@ to {
 
   .button {
     font-size: 1.07rem;
+  }
+
+  .bell-icon {
+    margin-left: 18px;
   }
 }
 
