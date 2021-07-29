@@ -215,7 +215,6 @@ button {
 
 .icon-bell {
   --bg-position: -180px -220px;
-  margin-right: 0;
 }
 
 .icon-heart {
@@ -224,8 +223,6 @@ button {
 
 .icon-location {
   --bg-position: -100px -180px;
-  margin-left: 0px;
-  margin-right: 0;
 }
 
 .icon-search {
@@ -282,8 +279,7 @@ button {
 }
 
 .search {
-  margin-left: 30.5px;
-  margin-right: 85px;
+  width: 46.9%;
 }
 
 .search-icon {
@@ -291,6 +287,10 @@ button {
   top: 11px;
   left: 0;
   pointer-events: none;
+}
+
+.heart-icon {
+  margin-right: 8px;
 }
 
 .favorite-icon {
@@ -308,6 +308,10 @@ button {
 .offers-icon {
   position: absolute;
   left: -35px;
+}
+
+.bell-icon {
+  margin-left: 18px;
 }
 
 .info__link + .info__link {
@@ -337,7 +341,36 @@ button {
   margin-left: 20px;
 }
 
-.header__inner {
+.header-top {
+  display: none;
+  margin-bottom: 6px;
+}
+
+.header-top__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__link {
+  letter-spacing: 0.07px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.header-top__link + .header-top__link {
+  margin-left: 32px;
+}
+
+.header-bottom__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,10 +384,13 @@ button {
 
 .search-form {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .search__input {
-  width: 280px;
+  width: 252px;
   padding-left: 30px;
   background: #F6F6F7;
 }
@@ -369,6 +405,7 @@ button {
   font-family: inherit;
   font-size: inherit;
   background: transparent;
+  margin-left: auto;
 }
 
 .search-button {
@@ -379,7 +416,7 @@ button {
   font-size: 19px;
   padding-left: 32.5px;
   padding-right: 32.5px;
-  margin-left: 63px;
+  margin-left: auto;
 }
 
 .join-button {
@@ -731,10 +768,45 @@ to {
 <circle cx="273" cy="233" r="6" stroke="#8E969F" stroke-width="2"/>
 </svg>*/
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   body,
   html {
     font-size: 15px;
+  }
+
+  .header-top {
+    display: block;
+  }
+
+  .icon-help,
+  .header-bottom .icon-heart,
+  .join-button {
+    display: none;
+  }
+
+  .search {
+    width: 48.11%;
+    min-width: 440px;
+  }
+
+  .search__input {
+    width: 240px;
+  }
+
+  .info__link + .info__link {
+    margin-left: 0;
+  }
+
+  .header__buttons {
+    margin-left: 32px;
+  }
+
+  .menu-top {
+    font-size: 0.93rem;
+  }
+
+  .button {
+    font-size: 1.07rem;
   }
 }
 
@@ -784,5 +856,9 @@ to {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%;
+  }
+
+  .search {
+    display: none;
   }
 }
