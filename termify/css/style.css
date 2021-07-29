@@ -211,7 +211,6 @@ button {
 
 .icon-cart {
   --bg-position: -180px -100px;
-  margin-right: 18px;
 }
 
 .icon-bell {
@@ -311,8 +310,8 @@ button {
   left: -35px;
 }
 
-.header .info .icon {
-  margin-right: 18px;
+.info__link + .info__link {
+  margin-left: 18px;
 }
 
 .container {
@@ -330,6 +329,12 @@ button {
   z-index: 10;
   background-color: #fff;
   border-bottom: 1px solid #D9DBDD;
+}
+
+.header__buttons {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
 }
 
 .header__inner {
@@ -375,10 +380,6 @@ button {
   padding-left: 32.5px;
   padding-right: 32.5px;
   margin-left: 63px;
-}
-
-.sign-button {
-  margin-left: 2px;
 }
 
 .join-button {
