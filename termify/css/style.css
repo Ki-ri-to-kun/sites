@@ -279,7 +279,7 @@ button {
 }
 
 .search {
-  width: 46.9%;
+  flex-basis: 46.9%;
 }
 
 .search-icon {
