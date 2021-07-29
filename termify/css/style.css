@@ -279,7 +279,8 @@ button {
 }
 
 .search {
-  flex-basis: 46.9%;
+  -ms-flex-preferred-size: 46.9%;
+      flex-basis: 46.9%;
 }
 
 .search-icon {
@@ -781,7 +782,8 @@ to {
   }
 
   .search {
-    width: 48.11%;
+    -ms-flex-preferred-size: 48.11%;
+        flex-basis: 48.11%;
     min-width: 440px;
   }
 
