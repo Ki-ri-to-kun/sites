@@ -409,7 +409,7 @@ button {
   border: none;
   font-family: inherit;
   font-size: inherit;
-  background: transparent;
+  background: #f6f6f7;
   margin-left: auto;
 }
 
@@ -823,6 +823,10 @@ to {
 
   .bell-icon {
     margin-left: 18px;
+  }
+
+  .page {
+    padding-top: 130px;
   }
 }
 
