@@ -409,7 +409,7 @@ button {
   border: none;
   font-family: inherit;
   font-size: inherit;
-  background: #f6f6f7;
+  background: transparent;
   margin-left: auto;
 }
 
