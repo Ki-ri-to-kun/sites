@@ -913,7 +913,7 @@ to {
   }
 
   .info .icon-help,
-  .info .header-bottom .icon-heart,
+  .info .icon-heart,
   .info .join-button {
     display: none;
   }
