@@ -1,4 +1,3 @@
-
 function testWebP(callback) {
 
 var webP = new Image();
@@ -38,6 +37,31 @@ document.addEventListener( 'DOMContentLoaded', function () {
 	}).mount();
 } );
 
+var toggleButton = document.querySelector('.button-toggle');
+var mobileNav = document.querySelector('.menu-mobile');
+
+
+toggleButton.addEventListener('click', function(){
+	 
+		mobileNav.classList.remove('close-menu-mobile');
+		mobileNav.classList.add('make-visible');
+		setTimeout(function(){
+			mobileNav.classList.add('open-menu-mobile');
+		}, 1);
+});
+
+mobileNav.addEventListener('click', function(){
+	mobileNav.classList.remove('open-menu-mobile');
+	mobileNav.classList.add('close-menu-mobile');
+	
+	setTimeout(function(){
+			mobileNav.classList.remove('make-visible');
+			sidebarBtn.classList.remove('decrease-zindex');
+		}, 301);
+});
+
+
+
 var buttons = document.querySelectorAll('button');
 console.log(buttons);
 for (var i = 0; i <buttons.length; i++){
@@ -46,27 +70,3 @@ for (var i = 0; i <buttons.length; i++){
 	});
 }
 
-/*
-new Vue({
-	el: '',
-	data: {
-		
-		}	
-	},
-	methods: {
-		
-	}
-	
-});
-*/
-/*
-var sidebarLinks = document.querySelectorAll('.dashboard-sidebar ul li');
-for(var i=0; i<sidebarLinks.length; i++){
-	sidebarLinks[i].addEventListener('click', function(){
-		for(var y=0; y<sidebarLinks.length; y++){
-			sidebarLinks[y].classList.remove('dash-main-menu__item--active');
-		}
-		this.classList.add('dash-main-menu__item--active');
-	});
-}
-*/
