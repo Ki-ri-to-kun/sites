@@ -164,11 +164,11 @@ button {
   padding: 0 10px;
 }
 
-.col-16 {
-  width: 16.66%;
+.col-13 {
+  width: 13%;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 16.66%;
-          flex: 0 0 16.66%;
+      -ms-flex: 0 0 13%;
+          flex: 0 0 13%;
 }
 
 .col-25 {
@@ -179,10 +179,24 @@ button {
 }
 
 .col-33 {
-  width: 33%;
+  width: 33.33%;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33%;
-          flex: 0 0 33%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+
+.col-40 {
+  width: 40%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.col-47 {
+  width: 47%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
 }
 
 .col-50 {
@@ -190,13 +204,6 @@ button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-}
-
-.col-58 {
-  width: 58.33%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 58.33%;
-          flex: 0 0 58.33%;
 }
 
 .col-66 {
@@ -292,11 +299,6 @@ button {
   background: #8E969F;
 }
 
-.search {
-  -ms-flex-preferred-size: 46.9%;
-      flex-basis: 46.9%;
-}
-
 .search-icon {
   position: absolute;
   top: 11px;
@@ -336,6 +338,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .container {
@@ -387,13 +392,6 @@ button {
 .header-top__link + .header-top__link {
   margin-left: 32px;
 }
-
-/*
-.header-bottom__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}*/
 
 .search-form {
   position: relative;
@@ -798,28 +796,12 @@ to {
     display: none;
   }
 
-  .search {
-    -ms-flex-preferred-size: 48.11%;
-        flex-basis: 48.11%;
-    min-width: 440px;
-  }
-
-  .search__input {
-    width: 240px;
-  }
-
   .info__link + .info__link {
     margin-left: 0;
   }
 
   .header__buttons {
     margin-left: auto;
-  }
-
-  .info {
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-    min-width: 180px;
   }
 
   .menu-top {
@@ -836,6 +818,37 @@ to {
 
   .page {
     padding-top: 129px;
+  }
+
+  .col-tablet-16 {
+    width: 16.66%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.66%;
+            flex: 0 0 16.66%;
+  }
+
+  .col-tablet-25 {
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+
+  .col-tablet-58 {
+    width: 58.33%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33%;
+            flex: 0 0 58.33%;
+  }
+
+  .search-button {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .search__input {
+    width: 223px;
+    font-size: 0.933rem;
   }
 }
 
