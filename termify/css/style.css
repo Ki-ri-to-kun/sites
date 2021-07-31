@@ -900,7 +900,8 @@ to {
             flex: 0 0 75%;
   }
 
-  .search {
+  .info,
+  .header-top {
     display: none;
   }
 }
