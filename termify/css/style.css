@@ -964,6 +964,11 @@ to {
     width: 223px;
     font-size: 0.933rem;
   }
+
+  .button-secondary {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
 }
 
 @media (max-width: 767px) {
