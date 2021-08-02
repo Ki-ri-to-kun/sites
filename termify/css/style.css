@@ -1057,10 +1057,12 @@ to {
 
   .search__input {
     width: 100%;
+    font-size: 19px;
+    line-height: 30px;
   }
 
   .icon-search {
-    top: -3px;
+    top: 0;
   }
 
   .header-bottom img {
