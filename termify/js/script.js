@@ -40,6 +40,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
 var toggleButton = document.querySelector('.button-toggle');
 var mobileNav = document.querySelector('.menu-mobile');
 var body = document.querySelector('body');
+var backdrop = document.querySelector('.backdrop');
+var toggleButtonLines = document.querySelectorAll('.button-toggle__bar');
+
 
 var firstBurgerLine = toggleButton.firstChild;
 var secondBurgerLine = firstBurgerLine.nextSibling;
@@ -53,7 +56,12 @@ toggleButton.addEventListener('click', function(){
 			mobileNav.classList.add('open-menu-mobile');
 		}, 1);
 		body.classList.add('lock');
+		backdrop.style.display = "block";
 
+		for (var i = 0; i< toggleButtonLines.length; i++){
+			toggleButtonLines[i].style.background = "#fff";
+		}
+	
 		firstBurgerLine.style.transform = "translateX(10px) rotate(45deg) translateY(15.6px) ";
 		thirdBurgerLine.style.transform = "translateX(10px) rotate(-45deg) translateY(-15.6px) ";
 		secondBurgerLine.style.visibility = "hidden";
@@ -65,6 +73,11 @@ toggleButton.addEventListener('click', function(){
 				mobileNav.classList.remove('make-visible');
 			}, 301);
 			body.classList.remove('lock');
+			backdrop.style.display = "none";
+
+			for (var i = 0; i< toggleButtonLines.length; i++){
+				toggleButtonLines[i].style.background = "#000";
+			}
 
 			firstBurgerLine.style.transform = "rotate(0)";
 			thirdBurgerLine.style.transform = "rotate(0)";
@@ -81,6 +94,11 @@ mobileNav.addEventListener('click', function(){
 			mobileNav.classList.remove('make-visible');
 		}, 301);
 		body.classList.remove('lock');
+		backdrop.style.display = "none";
+
+		for (var i = 0; i< toggleButtonLines.length; i++){
+			toggleButtonLines[i].style.background = "#000";
+		}
 		
 		firstBurgerLine.style.transform = "rotate(0)";
 		thirdBurgerLine.style.transform = "rotate(0)";
@@ -88,3 +106,36 @@ mobileNav.addEventListener('click', function(){
 });
 
 
+/*
+var buttons = document.querySelectorAll('button');
+console.log(buttons);
+for (var i = 0; i <buttons.length; i++){
+	buttons[i].addEventListener('click', function(){
+		console.log('Кнопка нажата!');
+	});
+}*/
+
+/*
+new Vue({
+	el: '',
+	data: {
+		
+		}	
+	},
+	methods: {
+		
+	}
+	
+});
+*/
+/*
+var sidebarLinks = document.querySelectorAll('.dashboard-sidebar ul li');
+for(var i=0; i<sidebarLinks.length; i++){
+	sidebarLinks[i].addEventListener('click', function(){
+		for(var y=0; y<sidebarLinks.length; y++){
+			sidebarLinks[y].classList.remove('dash-main-menu__item--active');
+		}
+		this.classList.add('dash-main-menu__item--active');
+	});
+}
+*/
