@@ -449,8 +449,10 @@ button {
 
 .button-toggle {
   display: none;
-  margin-right: 20px;
-  margin-left: auto;
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  z-index: 10;
 }
 
 .button-toggle__bar {
@@ -513,6 +515,17 @@ button {
 
 .make-visible {
   display: block;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .menu-top {
