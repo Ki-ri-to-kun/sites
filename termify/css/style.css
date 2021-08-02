@@ -476,7 +476,7 @@ button {
   left: 0;
   background: white;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
 }
 
