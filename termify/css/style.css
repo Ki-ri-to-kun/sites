@@ -936,6 +936,12 @@ to {
     margin-left: 10px;
   }
 
+   .info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
   .info .icon-help,
   .info .icon-heart,
   .info .join-button {
