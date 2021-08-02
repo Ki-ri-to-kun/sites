@@ -48,7 +48,7 @@ var firstBurgerLine = toggleButton.firstChild;
 var secondBurgerLine = firstBurgerLine.nextSibling;
 var thirdBurgerLine = toggleButton.lastChild;
 
-toggleButton.addEventListener('click', function(){
+body.addEventListener('click', function(){
 	 if (!mobileNav.classList.contains('make-visible')){
 		mobileNav.classList.remove('close-menu-mobile');
 		mobileNav.classList.add('make-visible');
