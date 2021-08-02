@@ -62,8 +62,8 @@ toggleButton.addEventListener('click', function(){
 			toggleButtonLines[i].style.background = "#fff";
 		}
 	
-		firstBurgerLine.style.transform = "translateX(10px) rotate(45deg) translateY(15.6px) ";
-		thirdBurgerLine.style.transform = "translateX(10px) rotate(-45deg) translateY(-15.6px) ";
+		firstBurgerLine.style.transform = "translateX(7px) rotate(45deg) translateY(14.4px) ";
+		thirdBurgerLine.style.transform = "translateX(7px) rotate(-45deg) translateY(-14.4px) ";
 		secondBurgerLine.style.visibility = "hidden";
 		
 	 } else {

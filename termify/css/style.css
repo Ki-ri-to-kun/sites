@@ -456,11 +456,11 @@ button {
 }
 
 .button-toggle__bar {
-  width: 34px;
+  width: 30px;
   height: 3px;
   background: #000;
   display: block;
-  margin: 8px 0;
+  margin-bottom: 7px;
   border-radius: 3px;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
