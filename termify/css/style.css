@@ -982,6 +982,10 @@ to {
     padding-left: 19px;
     padding-right: 19px;
   }
+
+  .search__city {
+    font-size: 0.93rem;
+  }
 }
 
 @media (max-width: 767px) {
