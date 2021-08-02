@@ -58,7 +58,6 @@ toggleButton.addEventListener('click', function(){
 		thirdBurgerLine.style.transform = "translateX(10px) rotate(-45deg) translateY(-15.6px) ";
 		secondBurgerLine.style.visibility = "hidden";
 		
-		console.log(toggleButton.firstChild);
 	 } else {
 		mobileNav.classList.remove('open-menu-mobile');
 		mobileNav.classList.add('close-menu-mobile');
