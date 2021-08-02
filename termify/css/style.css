@@ -393,6 +393,11 @@ button {
   margin-left: 32px;
 }
 
+.header-bottom img {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .search-form {
   position: relative;
   display: -webkit-box;
@@ -445,7 +450,7 @@ button {
 .button-toggle {
   display: none;
   margin-right: 20px;
-  margin-left: 10px;
+  margin-left: auto;
 }
 
 .button-toggle__bar {
@@ -465,7 +470,7 @@ button {
   top: 0;
   left: 0;
   background: white;
-  width: 100%;
+  width: 250px;
   height: 100vh;
   overflow: auto;
 }
@@ -473,17 +478,14 @@ button {
 .menu-mobile__list {
   height: 100%;
   list-style: none;
-  margin: 10% auto;
   padding: 0;
   text-align: center;
-  padding-left: 40%;
-  padding-right: 25%;
+  padding: 15px;
   text-align: left;
-  position: relative;
 }
 
 .menu-mobile__item {
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
   line-height: 30px;
 }
 
@@ -1020,7 +1022,9 @@ to {
   }
 
   .info,
-  .header-top {
+  .header-top,
+  .search__city,
+  .search-button {
     display: none;
   }
 
@@ -1029,9 +1033,8 @@ to {
   }
 
   .menu-mobile .icon {
+    margin-right: 8px;
     margin-left: 0;
-    position: absolute;
-    left: calc(40% - 40px);
   }
 
   .menu-mobile .button {
@@ -1039,5 +1042,13 @@ to {
     text-align: center;
     padding: 9px 30px;
     border-radius: 10px;
+  }
+
+  .search__input {
+    width: 100%;
+  }
+
+  .icon-search {
+    top: -3px;
   }
 }
