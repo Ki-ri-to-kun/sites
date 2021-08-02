@@ -88,36 +88,3 @@ mobileNav.addEventListener('click', function(){
 });
 
 
-/*
-var buttons = document.querySelectorAll('button');
-console.log(buttons);
-for (var i = 0; i <buttons.length; i++){
-	buttons[i].addEventListener('click', function(){
-		console.log('Кнопка нажата!');
-	});
-}*/
-
-/*
-new Vue({
-	el: '',
-	data: {
-		
-		}	
-	},
-	methods: {
-		
-	}
-	
-});
-*/
-/*
-var sidebarLinks = document.querySelectorAll('.dashboard-sidebar ul li');
-for(var i=0; i<sidebarLinks.length; i++){
-	sidebarLinks[i].addEventListener('click', function(){
-		for(var y=0; y<sidebarLinks.length; y++){
-			sidebarLinks[y].classList.remove('dash-main-menu__item--active');
-		}
-		this.classList.add('dash-main-menu__item--active');
-	});
-}
-*/
