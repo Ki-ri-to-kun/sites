@@ -392,17 +392,29 @@ button {
 }
 
 .search-form {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #f6f6f7;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .search__input {
   width: 265px;
   padding-left: 30px;
   background: transparent;
+}
+
+.search__input-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search__input:focus {
@@ -415,7 +427,6 @@ button {
   font-family: inherit;
   font-size: inherit;
   background: #f6f6f7;
-  margin-left: auto;
 }
 
 .search-button {
@@ -426,7 +437,7 @@ button {
   font-size: 19px;
   padding-left: 32.5px;
   padding-right: 32.5px;
-  margin-left: auto;
+  margin-left: 10px;
 }
 
 .join-button {
@@ -922,7 +933,7 @@ to {
   }
 
   .header__buttons {
-    margin-left: auto;
+    margin-left: 10px;
   }
 
   .info .icon-help,
@@ -940,18 +951,18 @@ to {
   }
 
   .bell-icon {
-    margin-left: 18px;
+    margin-left: 10px;
   }
 
   .page {
     padding-top: 129px;
   }
 
-  .col-tablet-16 {
-    width: 16.66%;
+  .col-tablet-15 {
+    width: 15%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 16.66%;
-            flex: 0 0 16.66%;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
   }
 
   .col-tablet-25 {
@@ -961,11 +972,17 @@ to {
             flex: 0 0 25%;
   }
 
-  .col-tablet-58 {
-    width: 58.33%;
+  .col-tablet-60 {
+    width: 60%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.33%;
-            flex: 0 0 58.33%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+  }
+
+  .search-form {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .search-button {
@@ -1063,6 +1080,10 @@ to {
     width: 100%;
     font-size: 19px;
     line-height: 30px;
+  }
+
+  .search__input-container {
+    width: 100%;
   }
 
   .icon-search {
