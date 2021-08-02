@@ -39,15 +39,39 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 var toggleButton = document.querySelector('.button-toggle');
 var mobileNav = document.querySelector('.menu-mobile');
+var body = document.querySelector('body');
 
+var firstBurgerLine = toggleButton.firstChild;
+var secondBurgerLine = firstBurgerLine.nextSibling;
+var thirdBurgerLine = toggleButton.lastChild;
 
 toggleButton.addEventListener('click', function(){
-	 
+	 if (!mobileNav.classList.contains('make-visible')){
 		mobileNav.classList.remove('close-menu-mobile');
 		mobileNav.classList.add('make-visible');
 		setTimeout(function(){
 			mobileNav.classList.add('open-menu-mobile');
 		}, 1);
+		body.classList.add('lock');
+
+		firstBurgerLine.style.transform = "translateX(10px) rotate(45deg) translateY(15.6px) ";
+		thirdBurgerLine.style.transform = "translateX(10px) rotate(-45deg) translateY(-15.6px) ";
+		secondBurgerLine.style.visibility = "hidden";
+		
+		console.log(toggleButton.firstChild);
+	 } else {
+		mobileNav.classList.remove('open-menu-mobile');
+		mobileNav.classList.add('close-menu-mobile');
+		setTimeout(function(){
+				mobileNav.classList.remove('make-visible');
+			}, 301);
+			body.classList.remove('lock');
+
+			firstBurgerLine.style.transform = "rotate(0)";
+			thirdBurgerLine.style.transform = "rotate(0)";
+			secondBurgerLine.style.visibility = "visible";
+	 }
+		
 });
 
 mobileNav.addEventListener('click', function(){
@@ -56,17 +80,45 @@ mobileNav.addEventListener('click', function(){
 	
 	setTimeout(function(){
 			mobileNav.classList.remove('make-visible');
-			sidebarBtn.classList.remove('decrease-zindex');
 		}, 301);
+		body.classList.remove('lock');
+		
+		firstBurgerLine.style.transform = "rotate(0)";
+		thirdBurgerLine.style.transform = "rotate(0)";
+		secondBurgerLine.style.visibility = "visible";
 });
 
 
-
+/*
 var buttons = document.querySelectorAll('button');
 console.log(buttons);
 for (var i = 0; i <buttons.length; i++){
 	buttons[i].addEventListener('click', function(){
 		console.log('Кнопка нажата!');
 	});
-}
+}*/
 
+/*
+new Vue({
+	el: '',
+	data: {
+		
+		}	
+	},
+	methods: {
+		
+	}
+	
+});
+*/
+/*
+var sidebarLinks = document.querySelectorAll('.dashboard-sidebar ul li');
+for(var i=0; i<sidebarLinks.length; i++){
+	sidebarLinks[i].addEventListener('click', function(){
+		for(var y=0; y<sidebarLinks.length; y++){
+			sidebarLinks[y].classList.remove('dash-main-menu__item--active');
+		}
+		this.classList.add('dash-main-menu__item--active');
+	});
+}
+*/

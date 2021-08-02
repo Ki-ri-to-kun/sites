@@ -460,6 +460,11 @@ button {
   display: block;
   margin: 8px 0;
   border-radius: 3px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .menu-mobile {
@@ -1050,5 +1055,13 @@ to {
 
   .icon-search {
     top: -3px;
+  }
+
+  .header-bottom img {
+    margin-bottom: 10px;
+  }
+
+  body.lock {
+    overflow: hidden;
   }
 }
