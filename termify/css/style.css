@@ -1119,13 +1119,13 @@ to {
     text-align: center;
   }
 
-  .footer__first-title {
-    margin-top: 0;
-  }
-
   .footer__title {
     margin-bottom: 10px;
     margin-top: 24px;
+  }
+
+  .footer__first-title {
+    margin-top: 0;
   }
 
   .footer-top {
