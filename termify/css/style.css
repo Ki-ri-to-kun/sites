@@ -1114,4 +1114,13 @@ to {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .footer__title {
+    margin-bottom: 10px;
+    margin-top: 24px;
+  }
+
+  .footer__first-title {
+    margin-top: 0;
+  }
 }
