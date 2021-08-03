@@ -833,7 +833,10 @@ button {
   letter-spacing: 0.07px;
   font-size: inherit;
   color: inherit;
-  margin-right: 48px;
+}
+
+.footer-bottom button + button {
+  margin-left: 32px;
 }
 
 .footer-bottom .row {
