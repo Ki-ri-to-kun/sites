@@ -836,7 +836,7 @@ button {
 }
 
 .footer-bottom button + button {
-  margin-left: 32px;
+  margin-left: 48px;
 }
 
 .footer-bottom .row {
@@ -1011,6 +1011,10 @@ to {
 
   .search__city {
     font-size: 0.93rem;
+  }
+
+  .footer-bottom button + button {
+    margin-left: 28px;
   }
 }
 
