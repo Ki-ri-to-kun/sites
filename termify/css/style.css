@@ -1124,15 +1124,15 @@ to {
     margin-top: 24px;
   }
 
-  .footer__first-title {
-    margin-top: 0;
-  }
-
   .footer-top {
     margin-bottom: 40px;
   }
 
   .footer-bottom .col:not(:last-child) {
     margin-bottom: 35px;
+  }
+  
+   .footer__first-title {
+    margin-top: 0;
   }
 }
