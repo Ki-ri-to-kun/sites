@@ -454,17 +454,17 @@ button {
 .button-toggle {
   display: none;
   position: absolute;
-  top: 21px;
+  top: 30px;
   right: 21px;
   z-index: 10;
 }
 
 .button-toggle__bar {
-  width: 30px;
+  width: 24px;
   height: 3px;
   background: #000;
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   border-radius: 3px;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -936,12 +936,12 @@ to {
     margin-left: 10px;
   }
 
-   .info {
+  .info {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  
+
   .info .icon-help,
   .info .icon-heart,
   .info .join-button {
@@ -1084,7 +1084,6 @@ to {
 
   .search__input {
     width: 100%;
-    font-size: 19px;
     line-height: 30px;
   }
 
@@ -1102,5 +1101,10 @@ to {
 
   body.lock {
     overflow: hidden;
+  }
+
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
