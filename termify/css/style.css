@@ -1016,6 +1016,10 @@ to {
   .footer-bottom button + button {
     margin-left: 28px;
   }
+
+  .footer .offers-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1134,9 +1138,5 @@ to {
 
   .footer-bottom .col:not(:last-child) {
     margin-bottom: 35px;
-  }
-
-  .footer .offers-icon {
-    display: none;
   }
 }
