@@ -131,6 +131,16 @@ backdrop.addEventListener('click', function(){
 });
 
 
+window.addEventListener('scroll', function(){
+	
+	const target = document.querySelector('.slider-main');
+	
+	var scrolled = window.pageYOffset;
+	var rate = scrolled * 0.5;
+
+	target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+});
+
 /*
 var buttons = document.querySelectorAll('button');
 console.log(buttons);

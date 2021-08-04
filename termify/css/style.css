@@ -897,6 +897,12 @@ button {
   }
 }
 
+.scroll {
+  margin: 0 auto;
+  background: url("../img/slide-6.png") no-repeat center center/cover;
+  height: 500px;
+}
+
 /*
 @keyframes slideInSide {
 from {
@@ -1139,4 +1145,10 @@ to {
   .footer-bottom .col:not(:last-child) {
     margin-bottom: 35px;
   }
+
+  .page {
+    padding-top: 111px;
+  }
 }
+
+.webp .scroll{ background: url(../img/slide-6.webp) no-repeat center center/cover; }
