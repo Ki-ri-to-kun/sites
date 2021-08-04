@@ -34,6 +34,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
 			perMove: 1,
 			gap: 20,
 			pagination: false,
+			breakpoints: {
+				767: {
+					perPage: 1
+				}
+			}
 	}).mount();
 } );
 

@@ -761,7 +761,7 @@ button {
 .recent__slider .splide__arrow--next {
   background-color: transparent;
   position: absolute;
-  top: 85px;
+  top: 40%;
   right: -10px;
 }
 
