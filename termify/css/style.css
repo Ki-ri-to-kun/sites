@@ -361,7 +361,7 @@ button {
 }
 
 .header__buttons {
-  margin-left: 20px;
+  margin-left: 32px;
 }
 
 .header-top {
@@ -920,7 +920,7 @@ button {
   }
 
   .header__buttons {
-    margin-left: 10px;
+    margin-left: 12px;
   }
 
   .info .icon-help,
