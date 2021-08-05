@@ -407,9 +407,16 @@ button {
 }
 
 .search__input {
-  width: 265px;
   padding-left: 30px;
+  width: 100%;
+  line-height: 30px;
   background: transparent;
+}
+
+.search__input-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .search__input-container {
@@ -444,18 +451,6 @@ button {
   padding-right: 32.5px;
   margin-left: 10px;
 }
-
-/*
-.join-button {
-	border-radius: 10px;
-	line-height: 30px;
-	padding-top: 9px;
-	padding-bottom: 9px;
-	font-size: 19px;
-	padding-left: 27px;
-	padding-right: 27px;
-	margin-left: 8px;
-}*/
 
 .button-toggle {
   display: none;
@@ -909,30 +904,6 @@ button {
   height: 500px;
 }
 
-/*
-@keyframes slideInSide {
-from {
-	transform: translateX(-100%);
-	}
-to {
-		transform: translateX(0);
-	}
-}
-
-@keyframes slideOutSide {
-from {
-	transform: translateX(0);
-	}
-to {
-	transform: translateX(-100%);
-	}
-} */
-
-/* <svg  fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M281.98 242.73L277.5 238.25" stroke="#8E969F" stroke-width="2" stroke-linecap="round"/>
-<circle cx="273" cy="233" r="6" stroke="#8E969F" stroke-width="2"/>
-</svg>*/
-
 @media (max-width: 1024px) {
   body,
   html {
@@ -1007,7 +978,6 @@ to {
   }
 
   .search__input {
-    width: 237px;
     font-size: 0.933rem;
   }
 
@@ -1098,15 +1068,6 @@ to {
     text-align: center;
     padding: 9px;
     border-radius: 10px;
-  }
-
-  .search__input {
-    width: 100%;
-    line-height: 30px;
-  }
-
-  .search__input-container {
-    width: 100%;
   }
 
   .icon-search {
