@@ -164,11 +164,11 @@ button {
   padding: 0 10px;
 }
 
-.col-10 {
-  width: 10.66%;
+.col-15 {
+  width: 15%;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 10.66%;
-          flex: 0 0 10.66%;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
 }
 
 .col-25 {
@@ -197,6 +197,13 @@ button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+}
+
+.col-60 {
+  width: 60%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
 }
 
 .col-66 {
@@ -358,7 +365,6 @@ button {
 }
 
 .header-top {
-  display: none;
   margin-bottom: 6px;
 }
 
@@ -395,9 +401,9 @@ button {
   display: -ms-flexbox;
   display: flex;
   background-color: #f6f6f7;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .search__input {
@@ -935,10 +941,6 @@ to {
   .container {
     padding: 0 10px;
     max-width: 1210px;
-  }
-
-  .header-top {
-    display: block;
   }
 
   .info__link + .info__link {
