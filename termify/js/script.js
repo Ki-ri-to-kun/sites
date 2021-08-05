@@ -133,10 +133,10 @@ backdrop.addEventListener('click', function(){
 
 window.addEventListener('scroll', function(){
 	
-	const target = document.querySelector('.slider-main');
+	const target = document.querySelector('.slider-main__slider img');
 	
 	var scrolled = window.pageYOffset;
-	var rate = scrolled * 0.5;
+	var rate = scrolled * 0.3;
 
 	target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
 });
