@@ -654,7 +654,7 @@ button {
   padding-top: 44%;
 }
 
-.slider-main__slider .card__image:hover::before {
+.slider-main__slider .card__image::before {
   display: none;
 }
 
