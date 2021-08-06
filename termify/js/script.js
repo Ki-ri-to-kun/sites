@@ -134,11 +134,19 @@ backdrop.addEventListener('click', function(){
 window.addEventListener('scroll', function(){
 	
 	const target = document.querySelector('.slider-main__slider img');
+	var sliderButton = document.querySelector('.slider-main .slider-button');
+	var sliderTitle = document.querySelector('.slider-main .slider-title');
+	var starRating = document.querySelector('.slider-main .star-rating');
+	var splidePagination = document.querySelector('.slider-main .splide__pagination');
 	
 	var scrolled = window.pageYOffset;
-	var rate = scrolled * 0.3;
+	var rate = scrolled * 0.5;
 
 	target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+	sliderButton.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+	sliderTitle.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+	starRating.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+	splidePagination.style.transform = "translateX(-50%) translate3d(0px, " + rate + "px, 0px)";
 });
 
 /*
