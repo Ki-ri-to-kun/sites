@@ -658,10 +658,6 @@ button {
   display: none;
 }
 
-.slider-main__slider .card__image img {
-  border-radius: 15px;
-}
-
 .slider-main__slider .splide__pagination {
   position: absolute;
   bottom: 29px;
