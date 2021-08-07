@@ -1212,4 +1212,8 @@ button {
   .near .card {
     margin-bottom: 48px;
   }
+
+  .slider-main__slider .splide__pagination li + li {
+    margin-left: 0;
+  }
 }
