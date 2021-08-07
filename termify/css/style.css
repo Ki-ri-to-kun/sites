@@ -1204,4 +1204,8 @@ button {
   .page {
     padding-top: 111px;
   }
+
+  .card {
+    margin-bottom: 25px;
+  }
 }
