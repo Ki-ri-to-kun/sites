@@ -1205,7 +1205,11 @@ button {
     padding-top: 111px;
   }
 
-  .card {
-    margin-bottom: 25px;
+  .near {
+    margin-bottom: 0;
+  }
+
+  .near .card {
+    margin-bottom: 48px;
   }
 }
