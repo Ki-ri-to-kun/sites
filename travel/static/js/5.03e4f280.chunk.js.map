@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/ComparePage.tsx"],"names":["ComparePage"],"mappings":"mJASeA,UARe,WAC7B,OACC","file":"static/js/5.03e4f280.chunk.js","sourcesContent":["\r\nconst ComparePage: React.FC = () => {\r\n\treturn (\r\n\t\t<div>\r\n\t\tCompare Page!!!\r\n\t\t</div>\r\n\t);\r\n};\r\n\r\nexport default ComparePage;"],"sourceRoot":""}
