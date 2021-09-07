@@ -1,2 +1,0 @@
-(this.webpackJsonpreact_typescript_start=this.webpackJsonpreact_typescript_start||[]).push([[5],{40:function(t,e,r){"use strict";r.r(e);var s=r(0);e.default=function(){return Object(s.jsx)("div",{children:"Compare Page!!!"})}}}]);
-//# sourceMappingURL=5.03e4f280.chunk.js.map
